@@ -1,0 +1,56 @@
+C51 COMPILER V9.05   T_2                                                                   11/26/2012 16:34:41 PAGE 1   
+
+
+C51 COMPILER V9.05, COMPILATION OF MODULE T_2
+OBJECT MODULE PLACED IN t-2.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE t-2.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                    #include<reg51.h>
+   2                      sbit sq=P2^0;
+   3                      sbit sp1=P2^1;
+   4                      unsigned int i,j;
+   5                      unsigned char z;
+   6                      unsigned char num1[4]={0x06,0x5b,0x4f,0x66};
+   7                      unsigned char num2[4]={0x01,0x02,0x04,0x08};
+   8                      void ISR_t0(void) interrupt 1
+   9                      {
+  10   1                    TF0=0;
+  11   1                        TL0=0xff;
+  12   1                        TH0=0xed;
+  13   1                    for(z=0;z<4;z++)
+  14   1                        {
+  15   2                          P0=num1[z];
+  16   2                              P2=num2[z];
+  17   2                              for(j=1;j<200;j++)
+  18   2                              {}
+  19   2                         
+  20   2                        }
+  21   1                       }
+  22                           void main()
+  23                      {
+  24   1                   sq=1;
+  25   1                       TMOD=0x01;
+  26   1                       IE=0x82;
+  27   1                       TL0=0xff;
+  28   1                       TH0=0xed;
+  29   1                       sq=0;
+  30   1                       TR0=1;
+  31   1                       while(1);
+  32   1                       
+  33   1                  }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     90    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     13    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

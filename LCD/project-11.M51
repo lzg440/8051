@@ -1,0 +1,175 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/23/2012  16:40:34  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE lcd1.obj TO project-11
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  lcd1.obj (LCD1)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CLDPTR)
+
+
+LINK MAP OF MODULE:  project-11 (LCD1)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0003H     UNIT         _DATA_GROUP_
+            IDATA   000BH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0033H     UNIT         ?PR?MAIN?LCD1
+            CODE    0833H     002DH     UNIT         ?PR?_DELAY?LCD1
+            CODE    0860H     0025H     UNIT         ?PR?_DATA2?LCD1
+            CODE    0885H     0019H     UNIT         ?C?LIB_CODE
+            CODE    089EH     0015H     UNIT         ?CO?LCD1
+            CODE    08B3H     000EH     UNIT         ?PR?_CMD?LCD1
+            CODE    08C1H     000EH     UNIT         ?PR?_DATA1?LCD1
+            CODE    08CFH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   project-11 (LCD1)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?LCD1
+
+?PR?MAIN?LCD1                  -----    -----
+  +--> ?PR?_DELAY?LCD1
+  +--> ?CO?LCD1
+  +--> ?PR?_DATA2?LCD1
+
+?PR?_DELAY?LCD1                -----    -----
+  +--> ?PR?_CMD?LCD1
+
+?PR?_DATA2?LCD1                0008H    0003H
+  +--> ?PR?_DATA1?LCD1
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/23/2012  16:40:34  PAGE 2
+
+
+?PR?_DATA1?LCD1                -----    -----
+  +--> ?PR?_DELAY?LCD1
+
+
+
+SYMBOL TABLE OF MODULE:  project-11 (LCD1)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LCD1
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:083AH         PUBLIC        _delay
+  C:0800H         PUBLIC        main
+  C:08B3H         PUBLIC        _cmd
+  C:08C1H         PUBLIC        _data1
+  C:0860H         PUBLIC        _data2
+  B:0090H.2       PUBLIC        en
+  B:0090H.0       PUBLIC        rs
+  B:0090H.1       PUBLIC        rw
+  C:0833H         SYMBOL        L?0020
+  C:0836H         SYMBOL        L?0021
+  -------         PROC          L?0019
+  -------         ENDPROC       L?0019
+  C:0833H         SYMBOL        L?0020
+  C:0836H         SYMBOL        L?0021
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        a
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:083AH         LINE#         5
+  C:083AH         LINE#         6
+  C:083AH         LINE#         8
+  C:084AH         LINE#         9
+  C:084AH         LINE#         10
+  C:0858H         LINE#         11
+  C:085FH         LINE#         12
+  -------         ENDPROC       _DELAY
+  -------         PROC          _CMD
+  D:0007H         SYMBOL        b
+  C:08B3H         LINE#         13
+  C:08B3H         LINE#         14
+  C:08B3H         LINE#         15
+  C:08B5H         LINE#         16
+  C:08B7H         LINE#         17
+  C:08B9H         LINE#         18
+  C:08BBH         LINE#         20
+  C:08BEH         LINE#         21
+  C:08C0H         LINE#         22
+  -------         ENDPROC       _CMD
+  -------         PROC          _DATA1
+  D:0007H         SYMBOL        c
+  C:08C1H         LINE#         23
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/23/2012  16:40:34  PAGE 3
+
+
+  C:08C1H         LINE#         24
+  C:08C1H         LINE#         25
+  C:08C3H         LINE#         26
+  C:08C5H         LINE#         27
+  C:08C7H         LINE#         28
+  C:08C9H         LINE#         30
+  C:08CCH         LINE#         31
+  C:08CEH         LINE#         32
+  -------         ENDPROC       _DATA1
+  -------         PROC          _DATA2
+  D:0008H         SYMBOL        lcdstr
+  C:0860H         LINE#         33
+  C:0866H         LINE#         34
+  C:0866H         LINE#         35
+  C:0871H         LINE#         36
+  C:0871H         LINE#         37
+  C:0882H         LINE#         38
+  C:0884H         LINE#         39
+  -------         ENDPROC       _DATA2
+  -------         PROC          MAIN
+  C:0800H         LINE#         40
+  C:0800H         LINE#         41
+  C:0800H         LINE#         43
+  C:0800H         LINE#         46
+  C:0802H         LINE#         47
+  C:0805H         LINE#         48
+  C:0807H         LINE#         49
+  C:080AH         LINE#         50
+  C:080CH         LINE#         51
+  C:080FH         LINE#         52
+  C:0811H         LINE#         53
+  C:0814H         LINE#         55
+  C:081DH         LINE#         56
+  C:0820H         LINE#         57
+  C:0822H         LINE#         58
+  C:0825H         LINE#         59
+  C:082EH         LINE#         60
+  C:0831H         LINE#         61
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LCD1
+
+  -------         MODULE        ?C?CLDPTR
+  C:0885H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00B6H BYTE ( 8%) *
+******************************************************************************
+
+Program Size: data=12.0 xdata=0 code=222
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,80 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/22/2012  15:52:26  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE for loop.obj TO project-3
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  for loop.obj (FOR_LOOP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  project-3 (FOR_LOOP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0021H     UNIT         ?PR?MAIN?FOR_LOOP
+            CODE    0821H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   project-3 (FOR_LOOP)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?FOR_LOOP
+
+
+
+SYMBOL TABLE OF MODULE:  project-3 (FOR_LOOP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        FOR_LOOP
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:0800H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  D:0006H         SYMBOL        z
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         2
+  C:0800H         LINE#         3
+  C:0800H         LINE#         5
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/22/2012  15:52:26  PAGE 2
+
+
+  C:0804H         LINE#         6
+  C:0804H         LINE#         7
+  C:0806H         LINE#         8
+  C:080AH         LINE#         9
+  C:080AH         LINE#         10
+  C:0815H         LINE#         11
+  C:0820H         LINE#         12
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        FOR_LOOP
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0021H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=48
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,62 @@
+C51 COMPILER V9.02   RTC                                                                   10/29/2013 18:30:19 PAGE 1   
+
+
+C51 COMPILER V9.02, COMPILATION OF MODULE RTC
+OBJECT MODULE PLACED IN rtc.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE rtc.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+*** WARNING C500 IN LINE 1 OF RTC.C: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+
+   1          // interfacing ds1307 with AT89C51
+   2          
+   3          #include <reg51.h>
+   4          #include <lcd_4bit.h>
+   5          #include <i2c.h>
+   6          #include <ds1307.h>
+   7          unsigned char clock[]={0x00,0x47,0x11,0x02,0x23,0x07,0x13};
+   8          unsigned char add=0,x;
+   9          
+  10          void main()
+  11          {
+  12   1        // unsigned int i,j,k;
+  13   1         //settime(0x10,0x00,0x00);
+  14   1         setdate(0x28,0x10,0x13);
+  15   1         setday(0x02);   // 0x00-SUN, 0x01-MON , 0x02-TUE
+  16   1      
+  17   1      
+  18   1              lcd_init();
+  19   1              display(1,"WELCOME TO");
+  20   1              display(2,"MY PROJECT");
+  21   1              lcd_delay(100);
+  22   1              clear();
+  23   1              display(1,"RTC INTERFACING");
+  24   1              display(2,"   USING I2C   ");
+  25   1              lcd_delay(100);
+  26   1              clear();
+  27   1              display(1,"TIME: ");
+  28   1              display(2,"DAY: ");
+  29   1      
+  30   1              while(1)
+  31   1              {
+  32   2                      disp_time();
+  33   2                      disp_date();
+  34   2                      disp_day();
+  35   2              }
+  36   1      
+  37   1      }              
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    841    ----
+   CONSTANT SIZE    =     95    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     33      19
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

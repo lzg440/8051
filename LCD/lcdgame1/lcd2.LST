@@ -1,0 +1,51 @@
+C51 COMPILER V9.03   LCD2                                                                  09/28/2013 20:24:45 PAGE 1   
+
+
+C51 COMPILER V9.03, COMPILATION OF MODULE LCD2
+OBJECT MODULE PLACED IN lcd2.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE lcd2.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                            #include<reg51.h>
+   2                    #include"4bit.h"
+   3                            void main()
+   4                    {               
+   5   1                      
+   6   1                         lcdcmd(0x28);
+   7   1                         delay(50);
+   8   1                         lcdcmd(0x38);                 
+   9   1                         delay(50);             
+  10   1                         lcdcmd(0x0e);                   
+  11   1                         delay(50);              
+  12   1                         lcdcmd(0x01);
+  13   1                         delay(50);
+  14   1                        
+  15   1                      
+  16   1                         lcdcmd(0x80);
+  17   1                         
+  18   1                         data2("VASOYA NIKHIL");
+  19   1                         delay(50);
+  20   1                         lcdcmd(0xc0);
+  21   1                   
+  22   1                         data2("5TH EC");
+  23   1                         delay(50);
+  24   1                         while(1);
+  25   1                         {
+  26   2                         }
+  27   1      
+  28   1             }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    208    ----
+   CONSTANT SIZE    =     21    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,192 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/03/2014  14:14:25  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE slcd.obj TO slcd RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  slcd.obj (SLCD)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  C:\KEIL\C51\LIB\C51S.LIB (STRLEN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CLDPTR)
+
+
+LINK MAP OF MODULE:  slcd (SLCD)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0005H     UNIT         _DATA_GROUP_
+            IDATA   000DH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0046H     UNIT         ?C?LIB_CODE
+            CODE    0846H     003EH     UNIT         ?PR?MAIN?SLCD
+            CODE    0884H     0037H     UNIT         ?CO?SLCD
+            CODE    08BBH     002DH     UNIT         ?PR?_MESSAGE?SLCD
+            CODE    08E8H     0026H     UNIT         ?PR?_DELAY?SLCD
+            CODE    090EH     0015H     UNIT         ?PR?_STRLEN?STRLEN
+            CODE    0923H     000CH     UNIT         ?C_C51STARTUP
+            CODE    092FH     000AH     UNIT         ?PR?_CMD?SLCD
+            CODE    0939H     000AH     UNIT         ?PR?_DAT?SLCD
+
+
+
+OVERLAY MAP OF MODULE:   slcd (SLCD)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?SLCD
+
+?PR?MAIN?SLCD                  -----    -----
+  +--> ?PR?_CMD?SLCD
+  +--> ?CO?SLCD
+  +--> ?PR?_MESSAGE?SLCD
+  +--> ?PR?_DELAY?SLCD
+
+?PR?_CMD?SLCD                  -----    -----
+  +--> ?PR?_DELAY?SLCD
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/03/2014  14:14:25  PAGE 2
+
+
+
+?PR?_MESSAGE?SLCD              0008H    0005H
+  +--> ?PR?_STRLEN?STRLEN
+  +--> ?PR?_DAT?SLCD
+
+?PR?_DAT?SLCD                  -----    -----
+  +--> ?PR?_DELAY?SLCD
+
+
+
+SYMBOL TABLE OF MODULE:  slcd (SLCD)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SLCD
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+  C:08EEH         PUBLIC        _delay
+  B:00B0H.6       PUBLIC        EN
+  D:00B8H         PUBLIC        IP
+  B:00B0H.7       PUBLIC        RS
+  C:0846H         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  C:092FH         PUBLIC        _cmd
+  D:0088H         PUBLIC        TCON
+  C:0939H         PUBLIC        _dat
+  D:00C8H         PUBLIC        T2CON
+  C:08BBH         PUBLIC        _message
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          L?0019
+  -------         ENDPROC       L?0019
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        x
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:08EEH         LINE#         7
+  C:08EEH         LINE#         8
+  C:08EEH         LINE#         10
+  C:08F8H         LINE#         11
+  C:090DH         LINE#         12
+  -------         ENDPROC       _DELAY
+  -------         PROC          _CMD
+  D:0007H         SYMBOL        x
+  C:092FH         LINE#         13
+  C:092FH         LINE#         14
+  C:092FH         LINE#         15
+  C:0931H         LINE#         16
+  C:0933H         LINE#         17
+  C:0933H         LINE#         18
+  C:0936H         LINE#         19
+  C:0938H         LINE#         20
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/03/2014  14:14:25  PAGE 3
+
+
+  -------         ENDPROC       _CMD
+  -------         PROC          _DAT
+  D:0007H         SYMBOL        x
+  C:0939H         LINE#         21
+  C:0939H         LINE#         22
+  C:0939H         LINE#         23
+  C:093BH         LINE#         24
+  C:093DH         LINE#         25
+  C:093DH         LINE#         26
+  C:0940H         LINE#         27
+  C:0942H         LINE#         28
+  -------         ENDPROC       _DAT
+  -------         PROC          _MESSAGE
+  D:0008H         SYMBOL        p
+  -------         DO            
+  D:000BH         SYMBOL        c
+  D:000CH         SYMBOL        m
+  -------         ENDDO         
+  C:08BBH         LINE#         29
+  C:08C1H         LINE#         30
+  C:08C1H         LINE#         32
+  C:08C6H         LINE#         33
+  C:08D0H         LINE#         34
+  C:08D0H         LINE#         35
+  C:08E3H         LINE#         36
+  C:08E7H         LINE#         37
+  -------         ENDPROC       _MESSAGE
+  -------         PROC          MAIN
+  C:0846H         LINE#         38
+  C:0846H         LINE#         39
+  C:0846H         LINE#         40
+  C:0849H         LINE#         41
+  C:084BH         LINE#         42
+  C:0850H         LINE#         43
+  C:0855H         LINE#         44
+  C:085AH         LINE#         45
+  C:085FH         LINE#         46
+  C:0868H         LINE#         47
+  C:086DH         LINE#         48
+  C:0876H         LINE#         49
+  C:0876H         LINE#         50
+  C:0876H         LINE#         51
+  C:087BH         LINE#         52
+  C:0882H         LINE#         53
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        SLCD
+
+  -------         MODULE        ?C?CLDOPTR
+  C:0800H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        STRLEN
+  C:090EH         PUBLIC        _STRLEN
+  -------         ENDMOD        STRLEN
+
+  -------         MODULE        ?C?CLDPTR
+  C:082DH         PUBLIC        ?C?CLDPTR
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/03/2014  14:14:25  PAGE 4
+
+
+  -------         ENDMOD        ?C?CLDPTR
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00DCH BYTE (10%) *
+******************************************************************************
+
+Program Size: data=14.0 xdata=0 code=326
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,102 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/23/2012  10:46:46  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE project-6.obj TO project-6
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  project-6.obj (PROJECT_6)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  project-6 (PROJECT_6)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0013H     UNIT         ?DT?PROJECT_6
+            IDATA   001BH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     0064H     UNIT         ?PR?MAIN?PROJECT_6
+            CODE    08F0H     0015H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   project-6 (PROJECT_6)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?PROJECT_6
+  +--> ?C_INITSEG
+
+
+
+SYMBOL TABLE OF MODULE:  project-6 (PROJECT_6)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        PROJECT_6
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:0008H         PUBLIC        num1
+  D:0010H         PUBLIC        num2
+  B:0090H.0       PUBLIC        sw1
+  B:0090H.1       PUBLIC        sw2
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/23/2012  10:46:46  PAGE 2
+
+
+  C:088CH         PUBLIC        main
+  D:0018H         PUBLIC        i
+  D:001AH         PUBLIC        z
+  -------         PROC          MAIN
+  C:088CH         LINE#         8
+  C:088CH         LINE#         9
+  C:088CH         LINE#         10
+  C:088FH         LINE#         11
+  C:0892H         LINE#         12
+  C:0892H         LINE#         13
+  C:0892H         LINE#         14
+  C:0895H         LINE#         15
+  C:0895H         LINE#         16
+  C:089FH         LINE#         17
+  C:089FH         LINE#         18
+  C:08A7H         LINE#         19
+  C:08ADH         LINE#         20
+  C:08ADH         LINE#         21
+  C:08BDH         LINE#         22
+  C:08C1H         LINE#         23
+  C:08C1H         LINE#         24
+  C:08C4H         LINE#         25
+  C:08C4H         LINE#         26
+  C:08CEH         LINE#         27
+  C:08CEH         LINE#         29
+  C:08D6H         LINE#         30
+  C:08DCH         LINE#         31
+  C:08DCH         LINE#         32
+  C:08ECH         LINE#         34
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PROJECT_6
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0078H BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=28.0 xdata=0 code=264
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

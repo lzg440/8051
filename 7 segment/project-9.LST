@@ -1,0 +1,44 @@
+C51 COMPILER V9.05   PROJECT_9                                                             11/23/2012 14:09:01 PAGE 1   
+
+
+C51 COMPILER V9.05, COMPILATION OF MODULE PROJECT_9
+OBJECT MODULE PLACED IN project-9.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE project-9.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                     #include<reg51.h>
+   2                 unsigned char z;
+   3                     unsigned int j;
+   4                     unsigned char num1[4]={0x06,0x5b,0x4f,0x66};
+   5                     unsigned char num2[4]={0x01,0x02,0x04,0x08};
+   6                     void main()
+   7                     {
+   8   1                   while(1)
+   9   1                       {
+  10   2                         for(z=0;z<4;z++)
+  11   2                         {
+  12   3                          P1=num1[z];
+  13   3                              P2=num2[z];
+  14   3                              for(j=1;j<200;j++)
+  15   3                              {}
+  16   3                         
+  17   3                         }
+  18   2                       }
+  19   1                      }
+  20          
+  21                                   
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     48    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     11    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

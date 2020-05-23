@@ -1,0 +1,71 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/03/2014  17:55:16  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE nikunj.obj TO nikunj RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  nikunj.obj (NIKUNJ)
+
+
+LINK MAP OF MODULE:  nikunj (NIKUNJ)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0112H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  nikunj (NIKUNJ)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        NIKUNJ
+  B:00A8H.7       SYMBOL        EA
+  B:00A8H.1       SYMBOL        ET0
+  B:00A8H.3       SYMBOL        ET1
+  C:0100H         SYMBOL        MAIN
+  D:0090H         SYMBOL        P1
+  B:0088H.7       SYMBOL        TF1
+  D:008CH         SYMBOL        TH0
+  D:008DH         SYMBOL        TH1
+  D:008BH         SYMBOL        TL1
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  B:0088H.6       SYMBOL        TR1
+  C:0000H         LINE#         4
+  C:000BH         LINE#         6
+  C:000DH         LINE#         7
+  C:001BH         LINE#         9
+  C:001DH         LINE#         10
+  C:0020H         LINE#         11
+  C:0023H         LINE#         12
+  C:0025H         LINE#         13
+  C:0027H         LINE#         14
+  C:0100H         LINE#         18
+  C:0103H         LINE#         19
+  C:0106H         LINE#         20
+  C:0108H         LINE#         21
+  C:010AH         LINE#         22
+  C:010CH         LINE#         23
+  C:010EH         LINE#         24
+  C:0110H         LINE#         25
+  -------         ENDMOD        NIKUNJ
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/03/2014  17:55:16  PAGE 2
+
+
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0024H BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=274
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

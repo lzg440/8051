@@ -1,0 +1,305 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Users\Nikhil Vasoya\Desktop\gsm 8051\gsm.uvproj
+Project File Date:  04/15/2014
+
+<h2>Output:</h2>
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(42): warning C280: 'i': unreferenced local variable
+test.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SEND?TEST
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=159
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(42): warning C280: 'i': unreferenced local variable
+test.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SEND?TEST
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=159
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(42): warning C280: 'i': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SEND?TEST
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=159
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 4 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+test.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SEND?TEST
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=161
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SEND?TEST
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=161
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 4 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+test.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=179
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=179
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 3 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+test.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=191
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=191
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 3 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+test.c - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+test.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=316
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=316
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+test.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=316
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=316
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+test.c - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=191
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(43): warning C280: 'i': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=14.0 xdata=0 code=191
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 3 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(69): error C141: syntax error near '/'
+test.c - 1 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(69): error C141: syntax error near '/'
+Target not created
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+TEST.C(69): error C141: syntax error near '/'
+Target not created
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+test.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=316
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=316
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+test.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=305
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=305
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+test.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=307
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=307
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+test.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=307
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=307
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+test.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=318
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=318
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+test.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=318
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling test.c...
+TEST.C(1): warning C500: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?TEST
+Program Size: data=12.0 xdata=0 code=318
+creating hex file from "gsm"...
+"gsm" - 0 Error(s), 2 Warning(s).

@@ -1,0 +1,32 @@
+C51 COMPILER V9.05   SWITCH                                                                11/22/2012 16:08:44 PAGE 1   
+
+
+C51 COMPILER V9.05, COMPILATION OF MODULE SWITCH
+OBJECT MODULE PLACED IN switch.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE switch.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                          #include<reg51.h>
+   2                  void main()
+   3                          {
+   4   1                      P1=0xff;
+   5   1                      P2=0x00;
+   6   1                      switch(P1)
+   7   1                      {
+   8   2                       case 0x01:return(0x80);
+*** ERROR C174 IN LINE 8 OF switch.c: return-expression on void-function
+   9   2                       case 0x02:return(0x40);
+  10   2                       case 0x03:return(0x20);
+  11   2                       case 0x04:return(0x10);
+  12   2                       case 0x05:return(0x08);
+  13   2                       case 0x06:return(0x04);
+  14   2                       case 0x07:return(0x02);
+  15   2                       case 0x08:return(0x01);
+  16   2                       default:return(0xff);
+  17   2                       }
+  18   1                       }
+  19          
+  20                            
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  1 ERROR(S)

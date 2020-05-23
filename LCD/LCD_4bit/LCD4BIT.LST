@@ -1,0 +1,40 @@
+C51 COMPILER V9.05   LCD4BIT                                                               11/24/2012 15:41:14 PAGE 1   
+
+
+C51 COMPILER V9.05, COMPILATION OF MODULE LCD4BIT
+OBJECT MODULE PLACED IN LCD4BIT.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE LCD4BIT.C BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                                          #included<reg51.h>
+*** WARNING C315 IN LINE 1 OF LCD4BIT.C: unknown #directive 'included'
+   2                         #include"lcd4bit.h"
+   3          
+   4                                    
+   5                                   
+   6                                    void main()
+   7                                    {                
+   8   1                          lcdinit();
+   9   1                                              lcdrotade(2,'r',"5TH EC");
+  10   1                                              lcddatas(1,"VASOYA NIKHIL");
+  11   1                                              
+  12   1                                              while(1);
+  13   1                                  {
+  14   2                                  }
+  15   1      
+  16   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    327    ----
+   CONSTANT SIZE    =     21    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      10
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

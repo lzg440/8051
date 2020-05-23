@@ -1,0 +1,224 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/29/2012  11:11:08  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE PROJECT-20.obj TO PROJECT-20
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  PROJECT-20.obj (PROJECT_20)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  PROJECT-20 (PROJECT_20)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0017H     UNIT         ?DT?PROJECT_20
+            IDATA   001FH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     014EH     UNIT         ?PR?MAIN?PROJECT_20
+            CODE    094EH     008CH     UNIT         ?C_C51STARTUP
+            CODE    09DAH     0030H     UNIT         ?PR?EQ?PROJECT_20
+            CODE    0A0AH     0013H     UNIT         ?C_INITSEG
+            CODE    0A1DH     0004H     UNIT         ?PR?ADD?PROJECT_20
+            CODE    0A21H     0004H     UNIT         ?PR?SUB?PROJECT_20
+
+
+
+OVERLAY MAP OF MODULE:   PROJECT-20 (PROJECT_20)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?PROJECT_20
+  +--> ?C_INITSEG
+
+?PR?MAIN?PROJECT_20
+  +--> ?PR?ADD?PROJECT_20
+  +--> ?PR?SUB?PROJECT_20
+  +--> ?PR?EQ?PROJECT_20
+
+
+
+SYMBOL TABLE OF MODULE:  PROJECT-20 (PROJECT_20)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/29/2012  11:11:08  PAGE 2
+
+
+  -------         MODULE        PROJECT_20
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  C:0800H         PUBLIC        main
+  C:0A1DH         PUBLIC        add
+  C:0A21H         PUBLIC        sub
+  C:09DAH         PUBLIC        eq
+  D:0008H         PUBLIC        c
+  D:0009H         PUBLIC        i
+  D:000AH         PUBLIC        j
+  D:000BH         PUBLIC        k
+  D:000EH         PUBLIC        l
+  D:000FH         PUBLIC        m
+  D:0013H         PUBLIC        n
+  D:001DH         PUBLIC        x
+  D:001EH         PUBLIC        y
+  -------         PROC          ADD
+  C:0A1DH         LINE#         5
+  C:0A1DH         LINE#         6
+  C:0A1DH         LINE#         7
+  C:0A20H         LINE#         8
+  -------         ENDPROC       ADD
+  -------         PROC          SUB
+  C:0A21H         LINE#         9
+  C:0A21H         LINE#         10
+  C:0A21H         LINE#         11
+  C:0A24H         LINE#         12
+  -------         ENDPROC       SUB
+  -------         PROC          EQ
+  C:09DAH         LINE#         13
+  C:09DAH         LINE#         14
+  C:09DAH         LINE#         15
+  C:09DDH         LINE#         16
+  C:09E2H         LINE#         17
+  C:09E2H         LINE#         18
+  C:09E8H         LINE#         19
+  C:09EEH         LINE#         20
+  C:09F1H         LINE#         21
+  C:09F3H         LINE#         22
+  C:09F4H         LINE#         23
+  C:09F9H         LINE#         24
+  C:09F9H         LINE#         25
+  C:0A00H         LINE#         26
+  C:0A06H         LINE#         27
+  C:0A09H         LINE#         28
+  C:0A09H         LINE#         30
+  -------         ENDPROC       EQ
+  -------         PROC          MAIN
+  C:0800H         LINE#         31
+  C:0800H         LINE#         32
+  C:0800H         LINE#         33
+  C:0803H         LINE#         34
+  C:0803H         LINE#         35
+  C:0803H         LINE#         36
+  C:0806H         LINE#         37
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/29/2012  11:11:08  PAGE 3
+
+
+  C:0809H         LINE#         38
+  C:0809H         LINE#         39
+  C:0811H         LINE#         40
+  C:0816H         LINE#         41
+  C:0816H         LINE#         42
+  C:081CH         LINE#         43
+  C:081FH         LINE#         44
+  C:0826H         LINE#         45
+  C:0828H         LINE#         46
+  C:082BH         LINE#         47
+  C:0830H         LINE#         48
+  C:0830H         LINE#         49
+  C:0836H         LINE#         50
+  C:0839H         LINE#         51
+  C:0840H         LINE#         52
+  C:0842H         LINE#         53
+  C:0845H         LINE#         54
+  C:084AH         LINE#         55
+  C:084AH         LINE#         56
+  C:0850H         LINE#         57
+  C:0853H         LINE#         58
+  C:085AH         LINE#         59
+  C:085CH         LINE#         61
+  C:085FH         LINE#         62
+  C:0864H         LINE#         63
+  C:0864H         LINE#         64
+  C:086AH         LINE#         65
+  C:086DH         LINE#         66
+  C:0874H         LINE#         67
+  C:0876H         LINE#         68
+  C:0879H         LINE#         69
+  C:087EH         LINE#         70
+  C:087EH         LINE#         71
+  C:0884H         LINE#         72
+  C:0887H         LINE#         73
+  C:088EH         LINE#         74
+  C:0890H         LINE#         75
+  C:0893H         LINE#         76
+  C:0898H         LINE#         77
+  C:0898H         LINE#         78
+  C:089EH         LINE#         79
+  C:08A1H         LINE#         80
+  C:08A8H         LINE#         81
+  C:08AAH         LINE#         82
+  C:08ADH         LINE#         83
+  C:08B2H         LINE#         84
+  C:08B2H         LINE#         85
+  C:08B8H         LINE#         86
+  C:08BBH         LINE#         87
+  C:08C2H         LINE#         88
+  C:08C4H         LINE#         89
+  C:08C6H         LINE#         90
+  C:08CBH         LINE#         91
+  C:08CBH         LINE#         92
+  C:08D1H         LINE#         93
+  C:08D4H         LINE#         94
+  C:08DBH         LINE#         95
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/29/2012  11:11:08  PAGE 4
+
+
+  C:08DDH         LINE#         96
+  C:08DFH         LINE#         97
+  C:08E4H         LINE#         98
+  C:08E4H         LINE#         99
+  C:08EAH         LINE#         100
+  C:08EDH         LINE#         101
+  C:08F4H         LINE#         102
+  C:08F6H         LINE#         103
+  C:08F8H         LINE#         104
+  C:08FDH         LINE#         105
+  C:08FDH         LINE#         106
+  C:0903H         LINE#         107
+  C:0906H         LINE#         108
+  C:090DH         LINE#         109
+  C:090FH         LINE#         110
+  C:0911H         LINE#         111
+  C:0916H         LINE#         112
+  C:0916H         LINE#         113
+  C:091CH         LINE#         114
+  C:091FH         LINE#         115
+  C:0921H         LINE#         116
+  C:0926H         LINE#         117
+  C:0926H         LINE#         118
+  C:092CH         LINE#         119
+  C:092FH         LINE#         120
+  C:0931H         LINE#         121
+  C:0936H         LINE#         122
+  C:0936H         LINE#         123
+  C:093CH         LINE#         124
+  C:093FH         LINE#         125
+  C:093FH         LINE#         127
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PROJECT_20
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0198H BYTE (19%) *
+******************************************************************************
+
+Program Size: data=32.0 xdata=0 code=552
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

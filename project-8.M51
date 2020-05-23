@@ -1,0 +1,90 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/23/2012  12:19:27  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE 7-segment.obj TO project-8
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  7-segment.obj (7_SEGMENT)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SLCMP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  project-8 (7_SEGMENT)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000CH     UNIT         ?DT?7_SEGMENT
+            IDATA   0014H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     0037H     UNIT         ?PR?MAIN?7_SEGMENT
+            CODE    08C3H     0016H     UNIT         ?C?LIB_CODE
+            CODE    08D9H     000CH     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   project-8 (7_SEGMENT)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?7_SEGMENT
+  +--> ?C_INITSEG
+
+
+
+SYMBOL TABLE OF MODULE:  project-8 (7_SEGMENT)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        7_SEGMENT
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  C:088CH         PUBLIC        main
+  D:0008H         PUBLIC        num
+  D:0011H         PUBLIC        i
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/23/2012  12:19:27  PAGE 2
+
+
+  D:0013H         PUBLIC        z
+  -------         PROC          MAIN
+  C:088CH         LINE#         5
+  C:088CH         LINE#         6
+  C:088CH         LINE#         7
+  C:088CH         LINE#         8
+  C:088CH         LINE#         9
+  C:088FH         LINE#         10
+  C:088FH         LINE#         11
+  C:0897H         LINE#         12
+  C:08B0H         LINE#         13
+  C:08B0H         LINE#         14
+  C:08BAH         LINE#         15
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        7_SEGMENT
+
+  -------         MODULE        ?C?SLCMP
+  C:08C3H         PUBLIC        ?C?SLCMP
+  -------         ENDMOD        ?C?SLCMP
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0042H BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=21.0 xdata=0 code=232
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

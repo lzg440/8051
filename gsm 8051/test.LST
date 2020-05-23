@@ -1,0 +1,117 @@
+C51 COMPILER V9.02   TEST                                                                  04/17/2014 12:26:39 PAGE 1   
+
+
+C51 COMPILER V9.02, COMPILATION OF MODULE TEST
+OBJECT MODULE PLACED IN test.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE test.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+*** WARNING C500 IN LINE 1 OF TEST.C: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+
+   1          #include<reg51.h>
+   2          #include <string.h>
+   3          
+   4          sbit start=P1^6;
+   5          sbit stop=P1^5;
+   6          
+   7          void sendbyte(char A)
+   8          {
+   9   1       TI=0;
+  10   1       SBUF=A;
+  11   1       while(TI==0);
+  12   1       TI=0;  
+  13   1      }
+  14          
+  15          
+  16          void send(char A[])
+  17          {
+  18   1              int i;
+  19   1              for(i=0;A[i]!=0;i++)
+  20   1              {
+  21   2               sendbyte(A[i]);
+  22   2              }
+  23   1      }
+  24          
+  25          void delay()                                    // Delay generation using Timer 0 mode 1
+  26          {
+  27   1              int i;
+  28   1              for(i=0;i<4;i++)
+  29   1              {
+  30   2              TH0= 0x00;                              
+  31   2                      TL0 = 0xFD;
+  32   2                      TH0 = 0x4B;
+  33   2                      TR0 = 1;                                // Start Timer
+  34   2                      while(TF0 == 0);                        // Using polling method
+  35   2                      TR0 = 0;                                // Stop Timer
+  36   2                      TF0 = 0;                                 // Clear flag
+  37   2              }       
+  38   1              TR0=0;                  
+  39   1      }
+  40          
+  41          void main()
+  42          {
+  43   1                  unsigned int  i;
+  44   1                  //P1=0x00;
+  45   1                  
+  46   1                              SCON  = 0x50;                   /* SCON: mode 1, 8-bit UART, enable rcvr      */
+  47   1                              TMOD = 0x20;               /* TMOD: timer 1, mode 2, 8-bit reload        */
+  48   1                              TH1   = 0xfd;                /* TH1:  reload value for 1200 baud @ 16MHz   */
+  49   1                              TR1   = 1;                  /* TR1:  timer 1 run                          */
+  50   1                              TI    = 0;
+  51   1                              RI=0;  
+  52   1                      
+  53   1      
+  54   1                              //send("NIKHIL VASOYA");
+C51 COMPILER V9.02   TEST                                                                  04/17/2014 12:26:39 PAGE 2   
+
+  55   1                              /*send("ATD 9727252506;");
+  56   1                              sendbyte (0x0d);
+  57   1                              sendbyte (0x0a); */
+  58   1                      //      delay();
+  59   1                          for(i=0;i<50000;i++);
+  60   1                              send("AT+CMGS=");
+  61   1                              sendbyte(0x22);
+  62   1                              send("9727252506");
+  63   1                              sendbyte (0x22);
+  64   1                              sendbyte (0x0d);
+  65   1                              sendbyte (0x0a);
+  66   1                              //delay();
+  67   1                          for(i=0;i<50000;i++);
+  68   1                              send("nikhil vasoya");
+  69   1                              sendbyte(0x1a); 
+  70   1                      
+  71   1                              
+  72   1      
+  73   1                              while(1)
+  74   1                              {
+  75   2                                /* while(RI==0);
+  76   2                                 c=SBUF; 
+  77   2                                 RI=0;
+  78   2                                 P1=c;
+  79   2                                 if(P1=='Y') 
+  80   2                     {
+  81   2                           start=1;   
+  82   2                                       stop=0;      
+  83   2                         }
+  84   2                         if(P1=='N')
+  85   2                     {
+  86   2                       stop=1;
+  87   2                                       start=0;       
+  88   2                     }*/
+  89   2                              } 
+  90   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    202    ----
+   CONSTANT SIZE    =     34    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

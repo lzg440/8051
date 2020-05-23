@@ -1,0 +1,62 @@
+C51 COMPILER V9.05   PROJECT_6                                                             11/23/2012 10:46:46 PAGE 1   
+
+
+C51 COMPILER V9.05, COMPILATION OF MODULE PROJECT_6
+OBJECT MODULE PLACED IN project-6.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE project-6.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                             #include<reg51.h>
+   2                              unsigned char num1[8]={0x80,0xc0,0xe0,0xf0,0xf8,0xfc,0xfe,0xff};
+   3                                  unsigned char num2[8]={0x7f,0x3f,0x1f,0x0f,0x07,0x03,0x01,0x00};
+   4                                  sbit sw1=P1^0;
+   5                                  sbit sw2=P1^1;
+   6                              unsigned char z;
+   7                              unsigned int i;
+   8                             void main()
+   9                             {
+  10   1                           P2=0x00;
+  11   1                               P1=0xff;
+  12   1                               while(1)
+  13   1                               {
+  14   2                           if(sw1==0)
+  15   2                               {
+  16   3                                  for(z=0;z<8;z++)
+  17   3                                      {
+  18   4                                        P2=num1[z];
+  19   4                                        for(i=1;i<30000;i++)
+  20   4                                        {
+  21   5                                        }
+  22   4                                      }
+  23   3                                }
+  24   2                                else if(sw2==0)
+  25   2                                {
+  26   3                                for(z=0;z<8;z++)
+  27   3                                      {
+  28   4                                       
+  29   4                                        P2=num2[z];
+  30   4                                        for(i=1;i<30000;i++)
+  31   4                                        {
+  32   5                                        }
+  33   4      
+  34   4                                      }
+  35   3                                }
+  36   2                               
+  37   2                              }
+  38   1                                 
+  39   1                              }         
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    100    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     19    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

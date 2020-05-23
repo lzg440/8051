@@ -1,0 +1,3 @@
+"serial comm.obj" 
+TO "serial comm" 
+RAMSIZE(256) 

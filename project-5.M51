@@ -1,0 +1,84 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/23/2012  09:18:51  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE array.obj TO project-5
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  array.obj (ARRAY)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  project-5 (ARRAY)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0015H     UNIT         ?DT?ARRAY
+            IDATA   001DH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     002AH     UNIT         ?PR?MAIN?ARRAY
+            CODE    08B6H     0015H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   project-5 (ARRAY)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?ARRAY
+  +--> ?C_INITSEG
+
+
+
+SYMBOL TABLE OF MODULE:  project-5 (ARRAY)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ARRAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:088CH         PUBLIC        main
+  D:0008H         PUBLIC        num
+  D:001AH         PUBLIC        i
+  D:001CH         PUBLIC        z
+  -------         PROC          MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/23/2012  09:18:51  PAGE 2
+
+
+  C:088CH         LINE#         7
+  C:088CH         LINE#         8
+  C:088CH         LINE#         9
+  C:088CH         LINE#         10
+  C:088CH         LINE#         11
+  C:088FH         LINE#         12
+  C:088FH         LINE#         13
+  C:0897H         LINE#         14
+  C:089DH         LINE#         15
+  C:089DH         LINE#         16
+  C:08ADH         LINE#         17
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        ARRAY
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 003EH BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=30.0 xdata=0 code=206
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

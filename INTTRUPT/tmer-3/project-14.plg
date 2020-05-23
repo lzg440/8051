@@ -1,0 +1,1146 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\10ec23\INTTRUPT\tmer-3\project-14.uvproj
+Project File Date:  11/27/2012
+
+<h2>Output:</h2>
+compiling project-14.c...
+project-14.c(143): error C141: syntax error near ''
+project-14.c - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(143): error C141: syntax error near ''
+Target not created
+compiling project-14.c...
+project-14.c(143): error C141: syntax error near '}'
+project-14.c - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(143): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(143): error C141: syntax error near '}'
+Target not created
+compiling project-14.c...
+project-14.c(142): error C141: syntax error near '}'
+project-14.c - 1 Error(s), 0 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=852
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=852
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=852
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=852
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=852
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=852
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=850
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=850
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=850
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=850
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=850
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=41.0 xdata=0 code=850
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=33.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=33.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=33.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=33.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=33.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=33.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=33.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=33.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=802
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=802
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=32.0 xdata=0 code=802
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=32.0 xdata=0 code=802
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=32.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=32.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=32.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=32.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=32.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=32.0 xdata=0 code=804
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c(140): warning C276: constant in condition expression
+project-14.c(142): warning C276: constant in condition expression
+project-14.c(144): warning C276: constant in condition expression
+project-14.c - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=36.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(140): warning C276: constant in condition expression
+project-14.c(142): warning C276: constant in condition expression
+project-14.c(144): warning C276: constant in condition expression
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=36.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 6 Warning(s).
+compiling project-14.c...
+project-14.c(140): warning C276: constant in condition expression
+project-14.c(142): warning C276: constant in condition expression
+project-14.c(144): warning C276: constant in condition expression
+project-14.c - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=36.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(140): warning C276: constant in condition expression
+project-14.c(142): warning C276: constant in condition expression
+project-14.c(144): warning C276: constant in condition expression
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=36.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 6 Warning(s).
+compiling project-14.c...
+project-14.c(140): warning C276: constant in condition expression
+project-14.c(142): warning C276: constant in condition expression
+project-14.c(144): warning C276: constant in condition expression
+project-14.c - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=36.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(140): warning C276: constant in condition expression
+project-14.c(142): warning C276: constant in condition expression
+project-14.c(144): warning C276: constant in condition expression
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=36.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 6 Warning(s).
+compiling project-14.c...
+project-14.c(7): error C141: syntax error near ';'
+project-14.c - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(7): error C141: syntax error near ';'
+Target not created
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(7): error C141: syntax error near ';'
+Target not created
+compiling project-14.c...
+project-14.c(4): error C141: syntax error near ';'
+project-14.c - 1 Error(s), 0 Warning(s).
+compiling project-14.c...
+project-14.c(121): warning C276: constant in condition expression
+project-14.c(123): warning C276: constant in condition expression
+project-14.c(125): warning C276: constant in condition expression
+project-14.c - 0 Error(s), 3 Warning(s).
+compiling project-14.c...
+project-14.c(121): warning C276: constant in condition expression
+project-14.c(123): warning C276: constant in condition expression
+project-14.c(125): warning C276: constant in condition expression
+project-14.c - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=32.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(121): warning C276: constant in condition expression
+project-14.c(123): warning C276: constant in condition expression
+project-14.c(125): warning C276: constant in condition expression
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=32.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 6 Warning(s).
+compiling project-14.c...
+project-14.c(121): warning C276: constant in condition expression
+project-14.c(123): warning C276: constant in condition expression
+project-14.c(125): warning C276: constant in condition expression
+project-14.c - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=31.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(121): warning C276: constant in condition expression
+project-14.c(123): warning C276: constant in condition expression
+project-14.c(125): warning C276: constant in condition expression
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=31.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 6 Warning(s).
+compiling project-14.c...
+project-14.c(121): warning C276: constant in condition expression
+project-14.c(123): warning C276: constant in condition expression
+project-14.c(125): warning C276: constant in condition expression
+project-14.c - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=28.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(121): warning C276: constant in condition expression
+project-14.c(123): warning C276: constant in condition expression
+project-14.c(125): warning C276: constant in condition expression
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=28.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 6 Warning(s).
+compiling project-14.c...
+project-14.c(121): warning C276: constant in condition expression
+project-14.c(123): warning C276: constant in condition expression
+project-14.c(125): warning C276: constant in condition expression
+project-14.c - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?PROJECT_14
+Program Size: data=28.0 xdata=0 code=959
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 3 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=821
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=821
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=829
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=829
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=829
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=829
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=829
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c(21): warning C275: expression with possibly no effect
+project-14.c(29): warning C275: expression with possibly no effect
+project-14.c(36): warning C275: expression with possibly no effect
+project-14.c(44): warning C275: expression with possibly no effect
+project-14.c(50): warning C275: expression with possibly no effect
+project-14.c(56): warning C275: expression with possibly no effect
+project-14.c(62): warning C275: expression with possibly no effect
+project-14.c(69): warning C275: expression with possibly no effect
+project-14.c(75): warning C275: expression with possibly no effect
+project-14.c(81): warning C275: expression with possibly no effect
+project-14.c(87): warning C275: expression with possibly no effect
+project-14.c(93): warning C275: expression with possibly no effect
+project-14.c(99): warning C275: expression with possibly no effect
+project-14.c(106): warning C275: expression with possibly no effect
+project-14.c(111): warning C275: expression with possibly no effect
+project-14.c(117): warning C275: expression with possibly no effect
+project-14.c - 0 Error(s), 16 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(21): warning C275: expression with possibly no effect
+project-14.c(29): warning C275: expression with possibly no effect
+project-14.c(36): warning C275: expression with possibly no effect
+project-14.c(44): warning C275: expression with possibly no effect
+project-14.c(50): warning C275: expression with possibly no effect
+project-14.c(56): warning C275: expression with possibly no effect
+project-14.c(62): warning C275: expression with possibly no effect
+project-14.c(69): warning C275: expression with possibly no effect
+project-14.c(75): warning C275: expression with possibly no effect
+project-14.c(81): warning C275: expression with possibly no effect
+project-14.c(87): warning C275: expression with possibly no effect
+project-14.c(93): warning C275: expression with possibly no effect
+project-14.c(99): warning C275: expression with possibly no effect
+project-14.c(106): warning C275: expression with possibly no effect
+project-14.c(111): warning C275: expression with possibly no effect
+project-14.c(117): warning C275: expression with possibly no effect
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=806
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 18 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c(14): error C202: 'm': undefined identifier
+project-14.c - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(14): error C202: 'm': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(14): error C202: 'm': undefined identifier
+Target not created
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=814
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=814
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=828
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=827
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=827
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(21): error C202: 'L': undefined identifier
+project-14.c(29): error C202: 'L': undefined identifier
+project-14.c(36): error C202: 'L': undefined identifier
+project-14.c(44): error C202: 'L': undefined identifier
+project-14.c(50): error C202: 'L': undefined identifier
+project-14.c(56): error C202: 'L': undefined identifier
+project-14.c(62): error C202: 'L': undefined identifier
+project-14.c(69): error C202: 'L': undefined identifier
+project-14.c(75): error C202: 'L': undefined identifier
+project-14.c(81): error C202: 'L': undefined identifier
+project-14.c(87): error C202: 'L': undefined identifier
+project-14.c(93): error C202: 'L': undefined identifier
+project-14.c(99): error C202: 'L': undefined identifier
+project-14.c(106): error C202: 'L': undefined identifier
+project-14.c(111): error C202: 'L': undefined identifier
+project-14.c(117): error C202: 'L': undefined identifier
+Target not created
+compiling project-14.c...
+project-14.c(21): error C202: 'L': undefined identifier
+project-14.c(29): error C202: 'L': undefined identifier
+project-14.c(36): error C202: 'L': undefined identifier
+project-14.c(44): error C202: 'L': undefined identifier
+project-14.c(50): error C202: 'L': undefined identifier
+project-14.c(56): error C202: 'L': undefined identifier
+project-14.c(62): error C202: 'L': undefined identifier
+project-14.c(69): error C202: 'L': undefined identifier
+project-14.c(75): error C202: 'L': undefined identifier
+project-14.c(81): error C202: 'L': undefined identifier
+project-14.c(87): error C202: 'L': undefined identifier
+project-14.c(93): error C202: 'L': undefined identifier
+project-14.c(99): error C202: 'L': undefined identifier
+project-14.c(106): error C202: 'L': undefined identifier
+project-14.c(111): error C202: 'L': undefined identifier
+project-14.c(117): error C202: 'L': undefined identifier
+project-14.c - 16 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(21): error C202: 'L': undefined identifier
+project-14.c(29): error C202: 'L': undefined identifier
+project-14.c(36): error C202: 'L': undefined identifier
+project-14.c(44): error C202: 'L': undefined identifier
+project-14.c(50): error C202: 'L': undefined identifier
+project-14.c(56): error C202: 'L': undefined identifier
+project-14.c(62): error C202: 'L': undefined identifier
+project-14.c(69): error C202: 'L': undefined identifier
+project-14.c(75): error C202: 'L': undefined identifier
+project-14.c(81): error C202: 'L': undefined identifier
+project-14.c(87): error C202: 'L': undefined identifier
+project-14.c(93): error C202: 'L': undefined identifier
+project-14.c(99): error C202: 'L': undefined identifier
+project-14.c(106): error C202: 'L': undefined identifier
+project-14.c(111): error C202: 'L': undefined identifier
+project-14.c(117): error C202: 'L': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(21): error C202: 'L': undefined identifier
+project-14.c(29): error C202: 'L': undefined identifier
+project-14.c(36): error C202: 'L': undefined identifier
+project-14.c(44): error C202: 'L': undefined identifier
+project-14.c(50): error C202: 'L': undefined identifier
+project-14.c(56): error C202: 'L': undefined identifier
+project-14.c(62): error C202: 'L': undefined identifier
+project-14.c(69): error C202: 'L': undefined identifier
+project-14.c(75): error C202: 'L': undefined identifier
+project-14.c(81): error C202: 'L': undefined identifier
+project-14.c(87): error C202: 'L': undefined identifier
+project-14.c(93): error C202: 'L': undefined identifier
+project-14.c(99): error C202: 'L': undefined identifier
+project-14.c(106): error C202: 'L': undefined identifier
+project-14.c(111): error C202: 'L': undefined identifier
+project-14.c(117): error C202: 'L': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling project-14.c...
+project-14.c(21): error C202: 'L': undefined identifier
+project-14.c(29): error C202: 'L': undefined identifier
+project-14.c(36): error C202: 'L': undefined identifier
+project-14.c(44): error C202: 'L': undefined identifier
+project-14.c(50): error C202: 'L': undefined identifier
+project-14.c(56): error C202: 'L': undefined identifier
+project-14.c(62): error C202: 'L': undefined identifier
+project-14.c(69): error C202: 'L': undefined identifier
+project-14.c(75): error C202: 'L': undefined identifier
+project-14.c(81): error C202: 'L': undefined identifier
+project-14.c(87): error C202: 'L': undefined identifier
+project-14.c(93): error C202: 'L': undefined identifier
+project-14.c(99): error C202: 'L': undefined identifier
+project-14.c(106): error C202: 'L': undefined identifier
+project-14.c(111): error C202: 'L': undefined identifier
+project-14.c(117): error C202: 'L': undefined identifier
+Target not created
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+compiling project-14.c...
+project-14.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling project-14.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDBLINK?PROJECT_14
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCDROTADE?PROJECT_14
+Program Size: data=31.0 xdata=0 code=820
+creating hex file from "project-14"...
+"project-14" - 0 Error(s), 2 Warning(s).

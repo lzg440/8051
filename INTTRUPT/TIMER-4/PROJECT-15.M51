@@ -1,0 +1,114 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/27/2012  15:16:35  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE PROJECT-15.obj TO PROJECT-15
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  PROJECT-15.obj (PROJECT_15)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  PROJECT-15 (PROJECT_15)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?PROJECT_15
+                    000AH     0016H                  *** GAP ***
+            BIT     0020H.0   0000H.1   UNIT         ?BI?PROJECT_15
+                    0020H.1   0000H.7                *** GAP ***
+            IDATA   0021H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0003H     ABSOLUTE     
+                    0006H     0005H                  *** GAP ***
+            CODE    000BH     0003H     ABSOLUTE     
+                    000EH     07F2H                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     002DH     UNIT         ?PR?ISR_T1?PROJECT_15
+            CODE    08B9H     0025H     UNIT         ?PR?ISR_T0?PROJECT_15
+            CODE    08DEH     0010H     UNIT         ?PR?MAIN?PROJECT_15
+            CODE    08EEH     0003H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   PROJECT-15 (PROJECT_15)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?PROJECT_15
+  +--> ?C_INITSEG
+
+
+
+SYMBOL TABLE OF MODULE:  PROJECT-15 (PROJECT_15)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/27/2012  15:16:35  PAGE 2
+
+
+  -------         MODULE        PROJECT_15
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  D:00A8H         PUBLIC        IE
+  B:00A0H.2       PUBLIC        sq1
+  C:08DEH         PUBLIC        main
+  D:0089H         PUBLIC        TMOD
+  B:0088H.5       PUBLIC        TF0
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  B:0088H.4       PUBLIC        TR0
+  B:0020H.0       PUBLIC        sq
+  D:0008H         PUBLIC        i
+  C:08B9H         PUBLIC        ISR_t0
+  C:088CH         PUBLIC        ISR_t1
+  -------         PROC          ISR_T0
+  C:08B9H         LINE#         5
+  C:08BDH         LINE#         7
+  C:08BFH         LINE#         8
+  C:08D5H         LINE#         9
+  C:08D9H         LINE#         10
+  -------         ENDPROC       ISR_T0
+  -------         PROC          ISR_T1
+  C:088CH         LINE#         11
+  C:0890H         LINE#         13
+  C:0892H         LINE#         14
+  C:0895H         LINE#         15
+  C:0898H         LINE#         16
+  C:089CH         LINE#         17
+  C:08B2H         LINE#         18
+  C:08B4H         LINE#         19
+  -------         ENDPROC       ISR_T1
+  -------         PROC          MAIN
+  C:08DEH         LINE#         20
+  C:08DEH         LINE#         21
+  C:08DEH         LINE#         23
+  C:08E1H         LINE#         24
+  C:08E4H         LINE#         25
+  C:08E7H         LINE#         26
+  C:08EAH         LINE#         27
+  C:08ECH         LINE#         28
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PROJECT_15
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 006AH BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=11.1 xdata=0 code=250
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

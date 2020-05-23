@@ -1,0 +1,194 @@
+C51 COMPILER V9.02   ELEVATOR                                                              04/24/2014 15:22:03 PAGE 1   
+
+
+C51 COMPILER V9.02, COMPILATION OF MODULE ELEVATOR
+OBJECT MODULE PLACED IN elevator.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE elevator.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+*** WARNING C500 IN LINE 1 OF ELEVATOR.C: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+
+   1          #include<reg51.h>  
+   2          
+   3          sbit m0=P0^0;
+   4          sbit m1=P0^1;
+   5          sbit m2=P0^2;
+   6          
+   7          sbit l1=P2^3;
+   8          sbit l2=P2^4;
+   9          sbit l3=P2^5;
+  10          
+  11          sbit motor1=P0^6;
+  12          sbit motor2=P0^7;
+  13          
+  14          sbit sm0=P2^0;
+  15          sbit sm1=P2^1;
+  16          sbit sm2=P2^2;
+  17          
+  18          void motor_fw()
+  19          {
+  20   1         motor1=1;
+  21   1         motor2=0;
+  22   1      }
+  23          void motor_re()
+  24          {
+  25   1         motor1=0;
+  26   1         motor2=1;
+  27   1      }
+  28          void motor_off()
+  29          {
+  30   1         motor1=0;
+  31   1         motor2=0;
+  32   1      }
+  33          
+  34          void delay()
+  35          {
+  36   1              unsigned int k,l;
+  37   1              for(k=0;k<60000;k++);
+  38   1              for(l=0;l<60000;l++);
+  39   1      }
+  40          
+  41          void main()
+  42          {
+  43   1              unsigned char i;
+  44   1              P0=0x00;
+  45   1              P2=0xff;
+  46   1              m0=1;
+  47   1              while(1)
+  48   1              {
+  49   2              if(sm0==0)
+  50   2              {
+  51   3                       if(i==0)
+  52   3                       {
+  53   4                              m1=0;
+  54   4                              m0=1;
+C51 COMPILER V9.02   ELEVATOR                                                              04/24/2014 15:22:03 PAGE 2   
+
+  55   4                              m2=0;
+  56   4                              motor_off();
+  57   4                       }
+  58   3                       if(i==1)
+  59   3                       {
+  60   4                              m2=0;
+  61   4                              m1=0;
+  62   4                              m0=1;
+  63   4                              while(l1==1)
+  64   4                              {
+  65   5                                      motor_re();
+  66   5                              }
+  67   4                              motor_off();
+  68   4      
+  69   4                       }
+  70   3                       if(i==2)
+  71   3                       {
+  72   4                              m0=1;
+  73   4                              m2=0;
+  74   4                              m1=0;
+  75   4                              while(l1==1)
+  76   4                              {
+  77   5                                       motor_re();
+  78   5                              }
+  79   4                              motor_off();
+  80   4                      }
+  81   3               i=0;
+  82   3               }
+  83   2           if(sm1==0)
+  84   2               {      
+  85   3                              if(i==0)
+  86   3                              {
+  87   4                                      m0=0;
+  88   4                                      m1=1;
+  89   4                                      m2=0;
+  90   4                                      while(l2==1)
+  91   4                                      {
+  92   5                                         motor_fw();
+  93   5                                      }
+  94   4                                      motor_off();
+  95   4                              }
+  96   3                              if(i==1)
+  97   3                              {
+  98   4                                      m2=0;
+  99   4                                      m1=1;
+ 100   4                                      m0=0;
+ 101   4                                      l2=0;
+ 102   4                                      while(l2==1)
+ 103   4                                      {
+ 104   5                                         motor_fw();
+ 105   5                                      }
+ 106   4                                      l2=0;
+ 107   4                                      motor_off();
+ 108   4                              }
+ 109   3                              if(i==2)
+ 110   3                              {
+ 111   4                                      m2=0;
+ 112   4                                  m1=1;
+ 113   4                                      m0=0;
+ 114   4                                  l2=0;
+ 115   4                                      while(l2==1)
+ 116   4                                      {
+C51 COMPILER V9.02   ELEVATOR                                                              04/24/2014 15:22:03 PAGE 3   
+
+ 117   5                                         motor_re();
+ 118   5                                      }
+ 119   4                                      motor_off();
+ 120   4                  }
+ 121   3               i=1;
+ 122   3           }
+ 123   2               if(sm2==0)
+ 124   2               {      
+ 125   3                              if(i==0)
+ 126   3                              {
+ 127   4                                m0=0; 
+ 128   4                                m2=1;
+ 129   4                                m1=0;
+ 130   4                                while(l3==1)
+ 131   4                                {
+ 132   5                                         motor_fw();
+ 133   5                                }
+ 134   4                                motor_off();
+ 135   4                              }
+ 136   3                              if(i==1)
+ 137   3                              {
+ 138   4                                      m1=0;
+ 139   4                                      m2=1;
+ 140   4                                      m0=0;
+ 141   4                                      while(l3==1)
+ 142   4                                      {
+ 143   5                                         motor_fw();
+ 144   5                                      }
+ 145   4                                      motor_off();
+ 146   4                  }
+ 147   3                              if(i==2)
+ 148   3                              {
+ 149   4                                      m2=1;
+ 150   4                                      m0=0;
+ 151   4                                      m1=0;
+ 152   4                                      motor_off();
+ 153   4                                      
+ 154   4                              }
+ 155   3               i=2;
+ 156   3               }
+ 157   2               
+ 158   2      }
+ 159   1      
+ 160   1      }
+ 161          
+ 162          
+ 163                                  
+ 164          
+ 165          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    265    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,114 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        06/20/2013  14:29:55  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\PROGRAM FILES\C51\BIN\BL51.EXE seg-2.obj TO p-3 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  seg-2.obj (SEG_2)
+  D:\PROGRAM FILES\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\PROGRAM FILES\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  p-3 (SEG_2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0011H     UNIT         ?DT?SEG_2
+            IDATA   0019H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     00C7H     UNIT         ?PR?MAIN?SEG_2
+            CODE    08C7H     008CH     UNIT         ?C_C51STARTUP
+            CODE    0953H     000DH     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   p-3 (SEG_2)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?SEG_2
+  +--> ?C_INITSEG
+
+
+
+SYMBOL TABLE OF MODULE:  p-3 (SEG_2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SEG_2
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  B:00B0H.0       PUBLIC        s1
+  B:00B0H.1       PUBLIC        s2
+  B:00B0H.2       PUBLIC        s3
+  C:0800H         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/20/2013  14:29:55  PAGE 2
+
+
+  B:00B0H.3       PUBLIC        s4
+  D:0008H         PUBLIC        num
+  D:0012H         PUBLIC        i
+  D:0013H         PUBLIC        j
+  D:0015H         PUBLIC        w
+  D:0016H         PUBLIC        x
+  D:0017H         PUBLIC        y
+  D:0018H         PUBLIC        z
+  -------         PROC          MAIN
+  C:0800H         LINE#         9
+  C:0800H         LINE#         10
+  C:0800H         LINE#         11
+  C:0800H         LINE#         12
+  C:0800H         LINE#         13
+  C:0803H         LINE#         14
+  C:0803H         LINE#         15
+  C:0806H         LINE#         16
+  C:0806H         LINE#         17
+  C:0809H         LINE#         18
+  C:0809H         LINE#         19
+  C:080CH         LINE#         20
+  C:080CH         LINE#         21
+  C:080FH         LINE#         22
+  C:0817H         LINE#         23
+  C:0819H         LINE#         24
+  C:082FH         LINE#         25
+  C:0832H         LINE#         26
+  C:083AH         LINE#         27
+  C:083CH         LINE#         28
+  C:0852H         LINE#         29
+  C:0855H         LINE#         30
+  C:085DH         LINE#         31
+  C:085FH         LINE#         32
+  C:0875H         LINE#         33
+  C:0878H         LINE#         34
+  C:0880H         LINE#         35
+  C:0882H         LINE#         36
+  C:0898H         LINE#         37
+  C:08A3H         LINE#         38
+  C:08AEH         LINE#         39
+  C:08B9H         LINE#         40
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        SEG_2
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00D3H BYTE (10%) *
+******************************************************************************
+
+Program Size: data=26.0 xdata=0 code=355
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,120 @@
+C51 COMPILER V9.03   LCD_CAL                                                               06/20/2013 16:15:05 PAGE 1   
+
+
+C51 COMPILER V9.03, COMPILATION OF MODULE LCD_CAL
+OBJECT MODULE PLACED IN lcd-cal.OBJ
+COMPILER INVOKED BY: D:\Program Files\C51\BIN\C51.EXE lcd-cal.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                           #include<reg51.h>
+   2                           #include"lcd4bit.h"
+   3                           unsigned char num[4]={0xf7,0xfb,0xfd,0xfe};
+   4                           unsigned int j;
+   5                           void main()
+   6                           {
+   7   1                       lcdinit();
+   8   1                       while(1)
+   9   1                       {
+  10   2                          for(j=0;j<4;j++)
+  11   2                              {
+  12   3                                 P1=num[j];
+  13   3                                 if(P1==0x77)
+  14   3                                 {
+  15   4                                     while(P1==0x77);
+  16   4                                      lcd_datac('0');
+  17   4                                                                
+  18   4                                 }
+  19   3                                 
+  20   3                                 else if(P1==0x7b)
+  21   3                                 {
+  22   4                                      while(P1==0x7b);
+  23   4                                      lcd_datac('1');
+  24   4                                      
+  25   4                                 }
+  26   3                                 else if(P1==0x7d)
+  27   3                                 {
+  28   4                                      while(P1==0x7d);
+  29   4                                      lcd_datac('2');
+  30   4                                      
+  31   4                                 }
+  32   3      
+  33   3                                 else if(P1==0x7e)
+  34   3                                 {
+  35   4                                      while(P1==0x7e);
+  36   4                                      lcd_datac('3');
+  37   4                                      
+  38   4                                 }
+  39   3                                 else if(P1==0xb7)
+  40   3                                 {
+  41   4                                     while(P1==0xb7);
+  42   4                                     lcd_datac('4');
+  43   4                                         
+  44   4                     }
+  45   3                                 else if(P1==0xbb)
+  46   3                                 {
+  47   4                                     while(P1==0xbb);
+  48   4                                      lcd_datac('5');
+  49   4                                              
+  50   4                                 }
+  51   3                                 else if(P1==0xbd)
+  52   3                                 {
+  53   4                                      while(P1==0xbd);
+  54   4                                      lcd_datac('6');
+  55   4                                              
+C51 COMPILER V9.03   LCD_CAL                                                               06/20/2013 16:15:05 PAGE 2   
+
+  56   4                             }
+  57   3                                 else if(P1==0xbe)
+  58   3                                 {
+  59   4                                      while(P1==0xbe);   
+  60   4                                      lcd_datac('7');
+  61   4                                              
+  62   4                                 }
+  63   3                                  else if(P1==0xd7)
+  64   3                                 {
+  65   4                                     while(P1==0xd7);
+  66   4                                     lcd_datac('8');
+  67   4                                        
+  68   4                                 }
+  69   3                                  else if(P1==0xdb)
+  70   3                                 {
+  71   4                                     while(P1==0xdb);
+  72   4                                     lcd_datac('9');
+  73   4                                         
+  74   4                                 }
+  75   3                                  else if(P1==0xdd)
+  76   3                                 {
+  77   4                                     while(P1==0xdd);
+  78   4                                     lcd_datac('+');
+  79   4                                         
+  80   4                                 }
+  81   3                                  else if(P1==0xde)
+  82   3                                 {
+  83   4                                      while(P1==0xde);
+  84   4                                      lcd_datac('-');
+  85   4                                              
+  86   4                                 }
+  87   3                                  else if(P1==0xe7)
+  88   3                                 {
+  89   4                                     while(P1==0xe7);
+  90   4                                     lcd_datac('=');
+  91   4                                         
+  92   4                                 }
+  93   3                      }
+  94   2                 }
+  95   1      }                                               
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    537    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      6      10
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

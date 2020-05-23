@@ -1,0 +1,419 @@
+C51 COMPILER V9.03   NILESH                                                                10/17/2013 16:55:06 PAGE 1   
+
+
+C51 COMPILER V9.03, COMPILATION OF MODULE NILESH
+OBJECT MODULE PLACED IN NILESH.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE NILESH.C BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          
+   3          //sbit pin1=P2^0;
+   4          //sbit pin2=P2^1;
+   5          
+   6          
+   7          void uart_ins()
+   8          {
+   9   1              TMOD = 0x20;    // use timer 1 8-bit auto reload moad
+  10   1              TH1 = 0xfd;             // 9600 bord rate
+  11   1              SCON = 0x50;    // use 8-bit 1 start bit 1 stop bit
+  12   1              TR1 = 1;                // start timer 1
+  13   1      }
+  14          
+  15          void uart_send(unsigned char uart_data)
+  16          {
+  17   1              SBUF = uart_data;
+  18   1              while(TI == 0);
+  19   1              TI = 0; 
+  20   1      }  
+  21          
+  22          char uart_receive()
+  23          {
+  24   1              unsigned char uart_data;
+  25   1              while(RI == 0);
+  26   1              uart_data = SBUF;
+  27   1              RI = 0;
+  28   1              return(uart_data);
+  29   1      }
+  30          
+  31          void uart_sends(unsigned char *string)
+  32          {
+  33   1               while(*string)
+  34   1               {
+  35   2                      uart_send(*string++);
+  36   2               }
+  37   1      }                                       
+  38          
+  39          void name(unsigned char n)
+  40          {
+  41   1              char a[]={0xfe,0xfd,0xfb,0xf7,0xef},b[5];
+  42   1              //      char a[]={0x01,0x02,0x04,0x08,0x10},b[5];
+  43   1              int i,j,k;
+  44   1                      
+  45   1      //      while(*n!='\0')
+  46   1      //      {
+  47   1      
+  48   1              switch(n)
+  49   1              {
+  50   2              case 'A':
+  51   2              {
+  52   3                      b[0]=0x10;
+  53   3                      b[1]=0x76;
+  54   3                      b[2]=0x76;
+  55   3                      b[3]=0x76 ;
+C51 COMPILER V9.03   NILESH                                                                10/17/2013 16:55:06 PAGE 2   
+
+  56   3                      b[4]=0x01;
+  57   3                      break; 
+  58   3                      
+  59   3              }
+  60   2              case 'B':
+  61   2              {
+  62   3                      b[0]=0x00;
+  63   3                      b[1]=0x36;
+  64   3                      b[2]=0x36;
+  65   3                      b[3]=0x36 ;
+  66   3                      b[4]=0x41;
+  67   3                      break; 
+  68   3                      
+  69   3              }
+  70   2              case 'C':
+  71   2              {
+  72   3                      b[0]=0x00;
+  73   3                      b[1]=0x3e;
+  74   3                      b[2]=0x3e;
+  75   3                      b[3]=0x3e ;
+  76   3                      b[4]=0x3e;
+  77   3                      break; 
+  78   3                      
+  79   3              }
+  80   2              case 'D':
+  81   2              {
+  82   3                      b[0]=0x00;
+  83   3                      b[1]=0x3e;
+  84   3                      b[2]=0x3e;
+  85   3                      b[3]=0x3e ;
+  86   3                      b[4]=0x41;
+  87   3                      break; 
+  88   3                      
+  89   3              }
+  90   2              case 'E':
+  91   2              {
+  92   3                      b[0]=0x00;
+  93   3                      b[1]=0x36;
+  94   3                      b[2]=0x36;
+  95   3                      b[3]=0x36 ;
+  96   3                      b[4]=0x36;
+  97   3                      break; 
+  98   3                      
+  99   3              }
+ 100   2              case 'F':
+ 101   2              {
+ 102   3                      b[0]=0x00;
+ 103   3                      b[1]=0x76;
+ 104   3                      b[2]=0x76;
+ 105   3                      b[3]=0x76 ;
+ 106   3                      b[4]=0x76;
+ 107   3                      break; 
+ 108   3                      
+ 109   3              }
+ 110   2              case 'G':
+ 111   2              {
+ 112   3                      b[0]=0x40;
+ 113   3                      b[1]=0x5a;
+ 114   3                      b[2]=0x5a;
+ 115   3                      b[3]=0x42 ;
+ 116   3                      b[4]=0x7b;
+ 117   3                      break; 
+C51 COMPILER V9.03   NILESH                                                                10/17/2013 16:55:06 PAGE 3   
+
+ 118   3                      
+ 119   3              }
+ 120   2              case 'H':
+ 121   2              {
+ 122   3                      b[0]=0x00;
+ 123   3                      b[1]=0x77;
+ 124   3                      b[2]=0x77;
+ 125   3                      b[3]=0x77 ;
+ 126   3                      b[4]=0x00;
+ 127   3                      break; 
+ 128   3                      
+ 129   3              }
+ 130   2              case 'I':
+ 131   2              {
+ 132   3                      b[0]=0x3e;
+ 133   3                      b[1]=0x3e;
+ 134   3                      b[2]=0x00;
+ 135   3                      b[3]=0x3e ;
+ 136   3                      b[4]=0x3e;
+ 137   3                      break; 
+ 138   3                      
+ 139   3              }
+ 140   2              case 'J':
+ 141   2              {
+ 142   3                      b[0]=0x3e;
+ 143   3                      b[1]=0x3e;
+ 144   3                      b[2]=0x00;
+ 145   3                      b[3]=0x7e ;
+ 146   3                      b[4]=0x7e;
+ 147   3                      break; 
+ 148   3                      
+ 149   3              }
+ 150   2              case 'K':
+ 151   2              {
+ 152   3                      b[0]=0x00;
+ 153   3                      b[1]=0x77;
+ 154   3                      b[2]=0x6b;
+ 155   3                      b[3]=0x5d ;
+ 156   3                      b[4]=0x3e;
+ 157   3                      break; 
+ 158   3                      
+ 159   3              }
+ 160   2      
+ 161   2              case 'L':
+ 162   2              {
+ 163   3                      b[0]=0x00;
+ 164   3                      b[1]=0x3f;
+ 165   3                      b[2]=0x3f;
+ 166   3                      b[3]=0x3f ;
+ 167   3                      b[4]=0x3f; 
+ 168   3                      break;
+ 169   3              }
+ 170   2                      case 'M':
+ 171   2              {
+ 172   3                      b[0]=0x00;
+ 173   3                      b[1]=0x7d;
+ 174   3                      b[2]=0x7b;
+ 175   3                      b[3]=0x7d ;
+ 176   3                      b[4]=0x00;
+ 177   3                      break; 
+ 178   3                              
+ 179   3              }
+C51 COMPILER V9.03   NILESH                                                                10/17/2013 16:55:06 PAGE 4   
+
+ 180   2                      case 'N':
+ 181   2              {
+ 182   3                      b[0]=0x00;
+ 183   3                      b[1]=0x7d;
+ 184   3                      b[2]=0xe3;
+ 185   3                      b[3]=0x5f ;
+ 186   3                      b[4]=0x00;
+ 187   3                      break; 
+ 188   3                              
+ 189   3              }
+ 190   2                      case 'O':
+ 191   2              {
+ 192   3                      b[0]=0x00;
+ 193   3                      b[1]=0x3e;
+ 194   3                      b[2]=0x3e;
+ 195   3                      b[3]=0x3e ;
+ 196   3                      b[4]=0x00;
+ 197   3                      break; 
+ 198   3                              
+ 199   3              }
+ 200   2                      case 'P':
+ 201   2              {
+ 202   3                      b[0]=0x80;
+ 203   3                      b[1]=0xf6;
+ 204   3                      b[2]=0xf6;
+ 205   3                      b[3]=0xf6 ;
+ 206   3                      b[4]=0xf9;
+ 207   3                      break; 
+ 208   3                              
+ 209   3              }
+ 210   2                      case 'Q':
+ 211   2              {
+ 212   3                      b[0]=0xf1;
+ 213   3                      b[1]=0xee;
+ 214   3                      b[2]=0xe6;
+ 215   3                      b[3]=0x86 ;
+ 216   3                      b[4]=0xb1;
+ 217   3                      break; 
+ 218   3                              
+ 219   3              }
+ 220   2                      case 'R':
+ 221   2              {
+ 222   3                      b[0]=0x00;
+ 223   3                      b[1]=0xee;
+ 224   3                      b[2]=0xce;
+ 225   3                      b[3]=0xbe ;
+ 226   3                      b[4]=0x39;
+ 227   3                      break; 
+ 228   3                              
+ 229   3              }
+ 230   2                      case 'S':
+ 231   2              {
+ 232   3                      b[0]=0x30;
+ 233   3                      b[1]=0x36;
+ 234   3                      b[2]=0x36;
+ 235   3                      b[3]=0x36 ;
+ 236   3                      b[4]=0x06;
+ 237   3                      break; 
+ 238   3                              
+ 239   3              }
+ 240   2                      case 'T':
+ 241   2              {
+C51 COMPILER V9.03   NILESH                                                                10/17/2013 16:55:06 PAGE 5   
+
+ 242   3                      b[0]=0xfe;
+ 243   3                      b[1]=0xfe;
+ 244   3                      b[2]=0x00;
+ 245   3                      b[3]=0xfe ;
+ 246   3                      b[4]=0xfe;
+ 247   3                      break; 
+ 248   3                              
+ 249   3              }
+ 250   2                      case 'U':
+ 251   2              {
+ 252   3                      b[0]=0xc0;
+ 253   3                      b[1]=0x3f;
+ 254   3                      b[2]=0x3f;
+ 255   3                      b[3]=0x3f ;
+ 256   3                      b[4]=0xc0;
+ 257   3                      break; 
+ 258   3                              
+ 259   3              }
+ 260   2                      case 'V':
+ 261   2              {
+ 262   3                      b[0]=0x60;
+ 263   3                      b[1]=0x5f;
+ 264   3                      b[2]=0x3f;
+ 265   3                      b[3]=0x5f ;
+ 266   3                      b[4]=0x60;
+ 267   3                      break; 
+ 268   3                              
+ 269   3              }
+ 270   2              case 'W':
+ 271   2              {
+ 272   3                      b[0]=0x00;
+ 273   3                      b[1]=0x5f;
+ 274   3                      b[2]=0x6f;
+ 275   3                      b[3]=0x5f ;
+ 276   3                      b[4]=0x00;
+ 277   3                      break; 
+ 278   3                              
+ 279   3              }
+ 280   2                      case 'X':
+ 281   2              {
+ 282   3                      b[0]=0x1c;
+ 283   3                      b[1]=0x6b;
+ 284   3                      b[2]=0x77;
+ 285   3                      b[3]=0x6b ;
+ 286   3                      b[4]=0x1c;
+ 287   3                      break; 
+ 288   3                              
+ 289   3              }
+ 290   2                      case 'Y':
+ 291   2              {
+ 292   3                      b[0]=0x7e;
+ 293   3                      b[1]=0x7d;
+ 294   3                      b[2]=0x03;
+ 295   3                      b[3]=0x7d ;
+ 296   3                      b[4]=0x7e;
+ 297   3                      break; 
+ 298   3                              
+ 299   3              }
+ 300   2                      case 'z':
+ 301   2              {
+ 302   3                      b[0]=0x1e;
+ 303   3                      b[1]=0x2e;
+C51 COMPILER V9.03   NILESH                                                                10/17/2013 16:55:06 PAGE 6   
+
+ 304   3                      b[2]=0x36;
+ 305   3                      b[3]=0x3a ;
+ 306   3                      b[4]=0x3c;
+ 307   3                      break; 
+ 308   3                              
+ 309   3              }
+ 310   2              case ' ':
+ 311   2              {
+ 312   3                      b[0]=0x00;
+ 313   3                      b[1]=0x00;
+ 314   3                      b[2]=0x00;
+ 315   3                      b[3]=0x00 ;
+ 316   3                      b[4]=0x00; 
+ 317   3      
+ 318   3              }        
+ 319   2              }
+ 320   1                      for(i=0;i<5;i++)
+ 321   1                              {
+ 322   2                                      for(j=0;j<5;j++)
+ 323   2                              {
+ 324   3                                      P0=b[j];
+ 325   3                                      P1=a[j];
+ 326   3                                      
+ 327   3                                      for(k=0;k<5;k++);
+ 328   3                                      P0=0xff ;
+ 329   3                                      P1=0x00;
+ 330   3                              
+ 331   3                      }
+ 332   2                 }
+ 333   1                 n++ ;
+ 334   1      }
+ 335          //}
+ 336                                             /*
+ 337          void display(unsigned char str_dis[])
+ 338          {
+ 339                  unsigned char k;
+ 340                  for(k=str_dis[k];k>0;k--)
+ 341                          {
+ 342                                  pin1=1;
+ 343                                  pin2=1;
+ 344                                  name(str_dis[k]) ;
+ 345                                  pin1=0;
+ 346                                  pin2=1;
+ 347                                  name(str_dis[k]) ;
+ 348                                  pin1=1;
+ 349                                  pin2=0;
+ 350                                  name(str_dis[k]) ;
+ 351                                  pin1=0;
+ 352                                  pin2=0;
+ 353                                  name(str_dis[k]) ;
+ 354                          }
+ 355          }                                 */
+ 356          
+ 357          
+ 358          void main()
+ 359          {       
+ 360   1              unsigned char d[10],i,a ;
+ 361   1              P0=0xff;
+ 362   1              P1=0x00;
+ 363   1              P2=0X00;
+ 364   1              uart_ins();
+ 365   1              while(1)
+C51 COMPILER V9.03   NILESH                                                                10/17/2013 16:55:06 PAGE 7   
+
+ 366   1              {
+ 367   2                
+ 368   2                d[i]=uart_receive();
+ 369   2                i++;
+ 370   2                if(i>=9)
+ 371   2                {      while(1)
+ 372   3                      {
+ 373   4                       for(i=0 ; i<5 ;i++)
+ 374   4                       {       P2=i;
+ 375   5                       a=d[i];
+ 376   5                      // display(s[i]);
+ 377   5               name(a);
+ 378   5                              
+ 379   5                        }
+ 380   4                       }
+ 381   3                }
+ 382   2              }
+ 383   1              
+ 384   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    769    ----
+   CONSTANT SIZE    =      5    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      26
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

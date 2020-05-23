@@ -1,0 +1,231 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        02/13/2015  20:26:47  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE led.obj TO p-1 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  led.obj (LED)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  p-1 (LED)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0040H     UNIT         ?DT?LED
+            IDATA   0048H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     0049H     UNIT         ?C_INITSEG
+            CODE    08D5H     0028H     UNIT         ?PR?MAIN?LED
+            CODE    08FDH     0024H     UNIT         ?PR?_DELAY?LED
+            CODE    0921H     001CH     UNIT         ?PR?DECREMENT?LED
+            CODE    093DH     001CH     UNIT         ?PR?SHIFT_RIGHT?LED
+            CODE    0959H     001CH     UNIT         ?PR?SHIFT_LEFT?LED
+            CODE    0975H     001CH     UNIT         ?PR?SHIFT_RIGHTFULL?LED
+            CODE    0991H     001CH     UNIT         ?PR?SHIFT_LEFTFULL?LED
+            CODE    09ADH     0018H     UNIT         ?PR?INCREMENT?LED
+
+
+
+OVERLAY MAP OF MODULE:   p-1 (LED)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?LED
+  +--> ?C_INITSEG
+
+?PR?MAIN?LED
+  +--> ?PR?INCREMENT?LED
+  +--> ?PR?_DELAY?LED
+  +--> ?PR?DECREMENT?LED
+  +--> ?PR?SHIFT_LEFT?LED
+  +--> ?PR?SHIFT_RIGHT?LED
+  +--> ?PR?SHIFT_RIGHTFULL?LED
+  +--> ?PR?SHIFT_LEFTFULL?LED
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/13/2015  20:26:47  PAGE 2
+
+
+
+?PR?INCREMENT?LED
+  +--> ?PR?_DELAY?LED
+
+?PR?DECREMENT?LED
+  +--> ?PR?_DELAY?LED
+
+?PR?SHIFT_LEFT?LED
+  +--> ?PR?_DELAY?LED
+
+?PR?SHIFT_RIGHT?LED
+  +--> ?PR?_DELAY?LED
+
+?PR?SHIFT_RIGHTFULL?LED
+  +--> ?PR?_DELAY?LED
+
+?PR?SHIFT_LEFTFULL?LED
+  +--> ?PR?_DELAY?LED
+
+
+
+SYMBOL TABLE OF MODULE:  p-1 (LED)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LED
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  C:0901H         PUBLIC        _delay
+  C:093DH         PUBLIC        shift_right
+  C:08D5H         PUBLIC        main
+  C:0959H         PUBLIC        shift_left
+  C:0921H         PUBLIC        decrement
+  C:09ADH         PUBLIC        increment
+  C:0975H         PUBLIC        shift_rightfull
+  D:0008H         PUBLIC        a
+  D:0018H         PUBLIC        b
+  D:0028H         PUBLIC        e
+  D:0038H         PUBLIC        f
+  C:0991H         PUBLIC        shift_leftfull
+  -------         PROC          MAIN
+  C:08D5H         LINE#         13
+  C:08D5H         LINE#         14
+  C:08D5H         LINE#         15
+  C:08D8H         LINE#         16
+  C:08DBH         LINE#         17
+  C:08DEH         LINE#         18
+  C:08E1H         LINE#         19
+  C:08E4H         LINE#         20
+  C:08E7H         LINE#         21
+  C:08EAH         LINE#         22
+  C:08EDH         LINE#         23
+  C:08F0H         LINE#         24
+  C:08F3H         LINE#         25
+  C:08F6H         LINE#         26
+  -------         ENDPROC       MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/13/2015  20:26:47  PAGE 3
+
+
+  C:08FDH         SYMBOL        L?0038
+  -------         PROC          L?0037
+  -------         ENDPROC       L?0037
+  C:08FDH         SYMBOL        L?0038
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        time
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:0901H         LINE#         28
+  C:0901H         LINE#         29
+  C:0901H         LINE#         31
+  C:090BH         LINE#         32
+  C:090BH         LINE#         33
+  C:0919H         LINE#         34
+  C:0920H         LINE#         35
+  -------         ENDPROC       _DELAY
+  -------         PROC          INCREMENT
+  -------         DO            
+  D:0082H         SYMBOL        k
+  -------         ENDDO         
+  C:09ADH         LINE#         36
+  C:09ADH         LINE#         37
+  C:09ADH         LINE#         39
+  C:09B0H         LINE#         40
+  C:09B0H         LINE#         41
+  C:09B7H         LINE#         42
+  C:09BAH         LINE#         43
+  C:09C4H         LINE#         44
+  -------         ENDPROC       INCREMENT
+  -------         PROC          DECREMENT
+  -------         DO            
+  D:0082H         SYMBOL        m
+  -------         ENDDO         
+  C:0921H         LINE#         45
+  C:0921H         LINE#         46
+  C:0921H         LINE#         48
+  C:0924H         LINE#         49
+  C:0924H         LINE#         50
+  C:092BH         LINE#         51
+  C:092EH         LINE#         52
+  C:093CH         LINE#         53
+  -------         ENDPROC       DECREMENT
+  -------         PROC          SHIFT_RIGHT
+  -------         DO            
+  D:0082H         SYMBOL        n
+  -------         ENDDO         
+  C:093DH         LINE#         54
+  C:093DH         LINE#         55
+  C:093DH         LINE#         57
+  C:0940H         LINE#         58
+  C:0940H         LINE#         59
+  C:0943H         LINE#         60
+  C:094FH         LINE#         61
+  C:0958H         LINE#         62
+  -------         ENDPROC       SHIFT_RIGHT
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/13/2015  20:26:47  PAGE 4
+
+
+  -------         PROC          SHIFT_LEFT
+  -------         DO            
+  D:0082H         SYMBOL        c
+  -------         ENDDO         
+  C:0959H         LINE#         63
+  C:0959H         LINE#         64
+  C:0959H         LINE#         66
+  C:095CH         LINE#         67
+  C:095CH         LINE#         68
+  C:095FH         LINE#         69
+  C:096BH         LINE#         70
+  C:0974H         LINE#         71
+  -------         ENDPROC       SHIFT_LEFT
+  -------         PROC          SHIFT_RIGHTFULL
+  -------         DO            
+  D:0082H         SYMBOL        d
+  -------         ENDDO         
+  C:0975H         LINE#         72
+  C:0975H         LINE#         73
+  C:0975H         LINE#         75
+  C:0978H         LINE#         76
+  C:0978H         LINE#         77
+  C:097BH         LINE#         78
+  C:0987H         LINE#         79
+  C:0990H         LINE#         80
+  -------         ENDPROC       SHIFT_RIGHTFULL
+  -------         PROC          SHIFT_LEFTFULL
+  -------         DO            
+  D:0082H         SYMBOL        g
+  -------         ENDDO         
+  C:0991H         LINE#         81
+  C:0991H         LINE#         82
+  C:0991H         LINE#         84
+  C:0994H         LINE#         85
+  C:0994H         LINE#         86
+  C:0997H         LINE#         87
+  C:09A3H         LINE#         88
+  C:09ACH         LINE#         89
+  -------         ENDPROC       SHIFT_LEFTFULL
+  -------         ENDMOD        LED
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0138H BYTE (15%) *
+******************************************************************************
+
+Program Size: data=73.0 xdata=0 code=456
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

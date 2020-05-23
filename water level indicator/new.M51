@@ -1,0 +1,154 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        04/04/2014  16:34:43  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE new.obj TO new RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  new.obj (NEW)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  new (NEW)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0001H     UNIT         ?DT?NEW
+            IDATA   0009H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0097H     UNIT         ?PR?MAIN?NEW
+            CODE    009AH     008CH     UNIT         ?C_C51STARTUP
+            CODE    0126H     0004H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   new (NEW)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?NEW
+  +--> ?C_INITSEG
+
+
+
+SYMBOL TABLE OF MODULE:  new (NEW)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        NEW
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00A0H.3       PUBLIC        buzzer
+  C:0003H         PUBLIC        main
+  B:00A0H.7       PUBLIC        leval1
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/04/2014  16:34:43  PAGE 2
+
+
+  B:00A0H.6       PUBLIC        leval2
+  B:00A0H.5       PUBLIC        leval3
+  B:00A0H.4       PUBLIC        leval4
+  B:0080H.2       PUBLIC        motor_right1
+  B:0080H.3       PUBLIC        motor_right2
+  B:0080H.0       PUBLIC        motor_left1
+  B:0080H.1       PUBLIC        motor_left2
+  D:0008H         PUBLIC        x
+  -------         PROC          MAIN
+  C:0003H         LINE#         21
+  C:0003H         LINE#         22
+  C:0003H         LINE#         23
+  C:0006H         LINE#         24
+  C:0009H         LINE#         25
+  C:000CH         LINE#         26
+  C:000EH         LINE#         28
+  C:000EH         LINE#         29
+  C:000EH         LINE#         30
+  C:0016H         LINE#         31
+  C:0016H         LINE#         32
+  C:0018H         LINE#         33
+  C:001AH         LINE#         34
+  C:001CH         LINE#         35
+  C:001EH         LINE#         36
+  C:0020H         LINE#         37
+  C:0022H         LINE#         38
+  C:0024H         LINE#         39
+  C:0026H         LINE#         40
+  C:0028H         LINE#         41
+  C:0028H         LINE#         43
+  C:0030H         LINE#         44
+  C:0030H         LINE#         45
+  C:0032H         LINE#         46
+  C:0034H         LINE#         47
+  C:0036H         LINE#         48
+  C:0038H         LINE#         49
+  C:003AH         LINE#         51
+  C:003CH         LINE#         52
+  C:003EH         LINE#         53
+  C:0040H         LINE#         54
+  C:0042H         LINE#         56
+  C:0042H         LINE#         58
+  C:004AH         LINE#         59
+  C:004AH         LINE#         60
+  C:004CH         LINE#         61
+  C:004EH         LINE#         62
+  C:0050H         LINE#         63
+  C:0052H         LINE#         64
+  C:0054H         LINE#         66
+  C:0059H         LINE#         67
+  C:0059H         LINE#         68
+  C:005BH         LINE#         69
+  C:005DH         LINE#         70
+  C:005FH         LINE#         71
+  C:0061H         LINE#         72
+  C:0064H         LINE#         73
+  C:0064H         LINE#         75
+BL51 BANKED LINKER/LOCATER V6.22                                                      04/04/2014  16:34:43  PAGE 3
+
+
+  C:0064H         LINE#         76
+  C:006AH         LINE#         77
+  C:006AH         LINE#         78
+  C:006CH         LINE#         79
+  C:006EH         LINE#         80
+  C:0070H         LINE#         81
+  C:0072H         LINE#         82
+  C:0074H         LINE#         83
+  C:0077H         LINE#         84
+  C:0079H         LINE#         85
+  C:007BH         LINE#         86
+  C:007DH         LINE#         87
+  C:007FH         LINE#         89
+  C:007FH         LINE#         91
+  C:0087H         LINE#         92
+  C:0087H         LINE#         93
+  C:0089H         LINE#         94
+  C:008BH         LINE#         95
+  C:008DH         LINE#         96
+  C:008FH         LINE#         98
+  C:0091H         LINE#         99
+  C:0093H         LINE#         100
+  C:0095H         LINE#         101
+  C:0097H         LINE#         103
+  C:0097H         LINE#         106
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        NEW
+
+Program Size: data=10.0 xdata=0 code=298
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

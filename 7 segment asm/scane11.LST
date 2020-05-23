@@ -1,0 +1,136 @@
+A51 MACRO ASSEMBLER  SCANE11                                                              03/05/2014 19:39:45 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN scane11.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE scane11.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG  0000H
+0000 020036            2     LJMP MAIN
+                       3     
+                       4     
+000B                   5     ORG 000BH
+                       6             
+000B EB                7             MOV A,R3
+000C 1160              8             ACALL CONVERT
+000E D290              9             SETB P1.0
+0010 1154             10             ACALL DELAY
+0012 C290             11             CLR P1.0
+                      12             
+0014 EA               13             MOV A,R2
+0015 1160             14             ACALL CONVERT
+0017 D291             15             SETB P1.1
+0019 1154             16             ACALL DELAY
+001B C291             17             CLR P1.1
+                      18             
+001D E9               19             MOV A,R1
+001E 1160             20             ACALL CONVERT
+0020 D292             21             SETB P1.2
+0022 1154             22             ACALL DELAY
+0024 C292             23             CLR P1.2
+                      24                             
+0026 E8               25             MOV A,R0
+0027 1160             26             ACALL CONVERT
+0029 D293             27             SETB P1.3
+002B 1154             28             ACALL DELAY
+002D C293             29             CLR P1.3
+                      30     
+002F 758A66           31             MOV TL0,#066H
+0032 758CFC           32             MOV TH0,#0FCH
+                      33     
+0035 32               34             RETI
+                      35     
+0036                  36     MAIN:   
+                      37     
+0036 7803             38                MOV R0,#3                                                                       
+0038 7902             39                MOV R1,#2
+003A 7A01             40                MOV R2,#1
+003C 7B00             41                MOV R3,#0
+                      42     
+003E 758000           43                MOV P0,#00H
+0041 759000           44                MOV P1,#00H
+0044 758901           45                MOV TMOD,#01H
+0047 758A66           46                MOV TL0,#066H
+004A 758CFC           47                MOV TH0,#0FCH
+004D 75A882           48                MOV IE,#82H
+0050 D28C             49                SETB TR0
+0052 80FE             50                SJMP $
+                      51     
+0054 758A66           52     DELAY:  MOV TL0,#066H
+0057 758CFC           53                     MOV TH0,#0FCH
+005A 308DFD           54     FF:             JNB TF0,FF
+005D C28D             55                     CLR TF0
+005F 22               56                     RET
+                      57                        
+                      58     
+A51 MACRO ASSEMBLER  SCANE11                                                              03/05/2014 19:39:45 PAGE     2
+
+0060 B40004           59     CONVERT:        CJNE A,#0,NEXT
+0063 758040           60                             MOV P0,#40H
+0066 22               61                             RET             
+0067 B40104           62     NEXT:           CJNE A,#1,NEXT1
+006A 758079           63                             MOV P0,#79H
+006D 22               64                             RET
+006E B40204           65     NEXT1:          CJNE A,#2,NEXT2
+0071 758024           66                             MOV P0,#24H
+0074 22               67                             RET
+0075 B40304           68     NEXT2:          CJNE A,#3,NEXT3
+0078 758030           69                             MOV P0,#30H
+007B 22               70                             RET
+007C B40404           71     NEXT3:          CJNE A,#4,NEXT4
+007F 758019           72                             MOV P0,#19H
+0082 22               73                             RET
+0083 B40504           74     NEXT4:          CJNE A,#5,NEXT5
+0086 758012           75                             MOV P0,#12H
+0089 22               76                             RET
+008A B40604           77     NEXT5:          CJNE A,#6,NEXT6
+008D 758002           78                             MOV P0,#02H
+0090 22               79                             RET
+0091 B40704           80     NEXT6:          CJNE A,#7,NEXT7
+0094 758078           81                             MOV P0,#78H
+0097 22               82                             RET
+0098 B40804           83     NEXT7:          CJNE A,#8,NEXT8
+009B 758000           84                             MOV P0,#00H
+009E 22               85                             RET
+009F B40903           86     NEXT8:          CJNE A,#9,NEXT9
+00A2 758010           87                             MOV P0,#10H
+00A5 22               88     NEXT9:          RET
+                      89     END
+A51 MACRO ASSEMBLER  SCANE11                                                              03/05/2014 19:39:45 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CONVERT. . . . . .  C ADDR   0060H   A   
+DELAY. . . . . . .  C ADDR   0054H   A   
+FF . . . . . . . .  C ADDR   005AH   A   
+IE . . . . . . . .  D ADDR   00A8H   A   
+MAIN . . . . . . .  C ADDR   0036H   A   
+NEXT . . . . . . .  C ADDR   0067H   A   
+NEXT1. . . . . . .  C ADDR   006EH   A   
+NEXT2. . . . . . .  C ADDR   0075H   A   
+NEXT3. . . . . . .  C ADDR   007CH   A   
+NEXT4. . . . . . .  C ADDR   0083H   A   
+NEXT5. . . . . . .  C ADDR   008AH   A   
+NEXT6. . . . . . .  C ADDR   0091H   A   
+NEXT7. . . . . . .  C ADDR   0098H   A   
+NEXT8. . . . . . .  C ADDR   009FH   A   
+NEXT9. . . . . . .  C ADDR   00A5H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,112 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        10/02/2013  10:13:46  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE matrix.obj TO PROJECT.1 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  matrix.obj (MATRIX)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  PROJECT.1 (MATRIX)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0014H     UNIT         ?DT?MATRIX
+            DATA    001CH     0002H     UNIT         _DATA_GROUP_
+            IDATA   001EH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     0039H     UNIT         ?PR?MAIN?MATRIX
+            CODE    08C5H     0020H     UNIT         ?PR?_DELAY?MATRIX
+            CODE    08E5H     0019H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   PROJECT.1 (MATRIX)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?MATRIX
+  +--> ?C_INITSEG
+
+?PR?MAIN?MATRIX                001CH    0002H
+  +--> ?PR?_DELAY?MATRIX
+
+
+
+SYMBOL TABLE OF MODULE:  PROJECT.1 (MATRIX)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MATRIX
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+BL51 BANKED LINKER/LOCATER V6.22                                                      10/02/2013  10:13:46  PAGE 2
+
+
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:08C5H         PUBLIC        _delay
+  C:088CH         PUBLIC        main
+  D:0008H         PUBLIC        a
+  D:0012H         PUBLIC        b
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        time
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:08C5H         LINE#         6
+  C:08C5H         LINE#         7
+  C:08C5H         LINE#         9
+  C:08CFH         LINE#         10
+  C:08CFH         LINE#         11
+  C:08DDH         LINE#         12
+  C:08E4H         LINE#         13
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0082H         SYMBOL        i
+  D:001CH         SYMBOL        j
+  -------         ENDDO         
+  C:088CH         LINE#         14
+  C:088CH         LINE#         15
+  C:088CH         LINE#         17
+  C:088FH         LINE#         18
+  C:0892H         LINE#         19
+  C:0892H         LINE#         20
+  C:0892H         LINE#         21
+  C:0895H         LINE#         22
+  C:0895H         LINE#         23
+  C:08A1H         LINE#         24
+  C:08ADH         LINE#         25
+  C:08B4H         LINE#         26
+  C:08B7H         LINE#         27
+  C:08BAH         LINE#         28
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MATRIX
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0071H BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=31.0 xdata=0 code=257
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

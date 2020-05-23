@@ -1,0 +1,189 @@
+C51 COMPILER V9.02   SERIAL_COMM                                                           10/04/2013 11:52:43 PAGE 1   
+
+
+C51 COMPILER V9.02, COMPILATION OF MODULE SERIAL_COMM
+OBJECT MODULE PLACED IN serial comm.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE serial comm.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+*** WARNING C500 IN LINE 1 OF SERIAL COMM.C: LICENSE ERROR (R201: INVALID LICENSE ID CODE (LIC))
+
+   1          #include <reg51.h>
+   2          #include"uart.h"
+   3          sbit relay1=P0^0;
+   4          sbit relay2=P0^1;
+   5          sbit relay3=P0^2;
+   6          sbit relay4=P0^3;
+   7          sbit relay5=P0^4;
+   8          sbit relay6=P0^5;
+   9          sbit relay7=P0^6;
+  10          sbit relay8=P0^7;
+  11          
+  12          void delay(unsigned  int time)
+  13          {
+  14   1           unsigned int i,j;
+  15   1               for(i=0;i<time;i++)
+  16   1                      for(j=0;j<1275;j++);
+  17   1      }
+  18          void main ()
+  19          {       
+  20   1      /*      Initialize Serial Port
+  21   1              Mode 1 
+  22   1              9600 baud rate generated using Timer 1 @ 11.0592 MHz 
+  23   1              
+  24   1              Here we are using 3 pin serial connection
+  25   1              Rx, Tx, Gnd.
+  26   1              
+  27   1              Rx = P3.0
+  28   1              Tx = P3.1
+  29   1              
+  30   1              The connection to the other serial port are 
+  31   1              Rx  --> Tx
+  32   1              Tx  --> Rx
+  33   1              Gnd --> Gnd
+  34   1              
+  35   1      */      
+  36   1      unsigned int a;
+  37   1      relay1=0;
+  38   1      relay2=0;
+  39   1      relay3=0;
+  40   1      relay4=0;
+  41   1      relay5=0;
+  42   1      relay6=0;
+  43   1      relay7=0;
+  44   1      relay8=0;
+  45   1      uart_ins();
+  46   1              while(1)                
+  47   1              {
+  48   2                a=uart_receive();
+  49   2                if (a=='U')
+  50   2                {
+  51   3                relay1=1;
+  52   3                relay7=1;
+  53   3                }
+  54   2                else if (a=='u')
+C51 COMPILER V9.02   SERIAL_COMM                                                           10/04/2013 11:52:43 PAGE 2   
+
+  55   2                {
+  56   3                relay1=0;
+  57   3                relay7=0;
+  58   3                }
+  59   2                else if (a=='D')
+  60   2                {
+  61   3                relay2=1;
+  62   3                relay8=1;
+  63   3                }
+  64   2                else if (a=='d')
+  65   2                {
+  66   3                relay2=0;
+  67   3                relay8=0;
+  68   3                }
+  69   2                else if (a=='R')
+  70   2                {
+  71   3                relay2=1;
+  72   3                relay7=1;
+  73   3                }
+  74   2                else if (a=='r')
+  75   2                {
+  76   3                relay2=0;
+  77   3                relay7=0;
+  78   3                }
+  79   2                else if(a=='L')
+  80   2                {
+  81   3                relay1=1;
+  82   3                relay8=1;
+  83   3                }
+  84   2            else if(a=='l')
+  85   2                {
+  86   3                relay1=0;
+  87   3                relay8=0;
+  88   3                }
+  89   2                else if(a=='W')
+  90   2                {
+  91   3                relay3=1;
+  92   3                }
+  93   2                else if(a=='w')
+  94   2                {
+  95   3                relay3=0;
+  96   3                }
+  97   2                else if(a=='X')
+  98   2                {
+  99   3                relay4=1;
+ 100   3                }
+ 101   2                else if(a=='x')
+ 102   2                {
+ 103   3                relay4=0;
+ 104   3                }
+ 105   2                else if(a=='Y')
+ 106   2                {
+ 107   3                relay5=1;
+ 108   3                }
+ 109   2                else if(a=='y')
+ 110   2                {
+ 111   3                relay5=0;
+ 112   3                }
+ 113   2                else if(a=='Z')
+ 114   2                {
+ 115   3                relay6=1;
+ 116   3                }
+C51 COMPILER V9.02   SERIAL_COMM                                                           10/04/2013 11:52:43 PAGE 3   
+
+ 117   2                else if(a=='z')
+ 118   2                {
+ 119   3                relay6=0;
+ 120   3                }
+ 121   2                else if(a=='n')
+ 122   2                {
+ 123   3                      relay1=0;
+ 124   3                      relay2=0;
+ 125   3                      relay3=0;
+ 126   3                      relay4=0;
+ 127   3                      relay5=0;
+ 128   3                      relay6=0;
+ 129   3                      relay7=0;
+ 130   3                      relay8=0;
+ 131   3                }
+ 132   2                else if (a=='0')      //all for sharp turn only
+ 133   2                {
+ 134   3                relay1=1;
+ 135   3                delay(250);
+ 136   3                relay7=1;
+ 137   3                }
+ 138   2                else if (a=='4')
+ 139   2                {      
+ 140   3                relay7=1;
+ 141   3                delay(250);
+ 142   3                relay1=1;
+ 143   3                }
+ 144   2                else if (a=='2')
+ 145   2                {
+ 146   3                relay2=1;
+ 147   3                delay(250);
+ 148   3                relay8=1;
+ 149   3                }
+ 150   2                else if (a=='4')
+ 151   2                {
+ 152   3                relay8=1;
+ 153   3                delay(250);
+ 154   3                relay2=1;
+ 155   3                }
+ 156   2               
+ 157   2      //      uart_sends("B.H.Gardi");
+ 158   2      //      uart_send(0x0d);        
+ 159   2              }
+ 160   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    409    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

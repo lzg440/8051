@@ -1,0 +1,96 @@
+C51 COMPILER V9.05   LCD                                                                   11/23/2012 15:41:04 PAGE 1   
+
+
+C51 COMPILER V9.05, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN lcd.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE lcd.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                          #include<reg51.h>
+   2                          sbit rs=P1^0;
+   3                          sbit rw=P1^1;
+   4                          sbit en=P1^2;
+   5                          void delay(int a)
+   6                          {
+   7   1                          int i,j;
+   8   1                              for(i=0;i<a;i++)
+   9   1                              {
+  10   2                                 for(j=0;j<1275;j++);
+  11   2                              }
+  12   1                      }
+  13                          void cmd(unsigned char b)
+  14                          {
+  15   1                         P2=b;
+  16   1                         en=1;
+  17   1                         rs=0;
+  18   1                         rw=0;
+  19   1                         
+  20   1                         delay(50);
+  21   1                         en=0;
+  22   1                      }
+  23                          void data1(unsigned char c)
+  24                          {
+  25   1                         P2=c;   
+  26   1                         en=1;
+  27   1                         rs=1;
+  28   1                         rw=0;
+  29   1                         
+  30   1                         delay(50);
+  31   1                         en=0;
+  32   1                      }
+  33                          void main()
+  34                          {
+  35   1                      while(1)
+  36   1                      {
+  37   2                       
+  38   2                         cmd(0x38);
+  39   2                         delay(50);
+  40   2                         cmd(0x0e);
+  41   2                         delay(50);
+  42   2                         cmd(0x01);
+  43   2                         delay(50);
+  44   2                         cmd(0x80);
+  45   2                         delay(50);
+  46   2                         data1('N');
+  47   2                         delay(50);
+  48   2                              data1('I');
+  49   2                         delay(50);
+  50   2                              data1('K');
+  51   2                         delay(50);
+  52   2                              data1('H');
+  53   2                         delay(50);
+  54   2                              data1('I');
+  55   2                         delay(50);
+C51 COMPILER V9.05   LCD                                                                   11/23/2012 15:41:04 PAGE 2   
+
+  56   2                         data1('L');
+  57   2                         delay(50);
+  58   2                            data1('V');
+  59   2                         delay(50);
+  60   2                          data1('A');
+  61   2                         delay(50);
+  62   2                          data1('S');
+  63   2                         delay(50);
+  64   2                          data1('O');
+  65   2                         delay(50);
+  66   2                          data1('Y');
+  67   2                         delay(50);
+  68   2                          data1('A');
+  69   2                         delay(50);
+  70   2                  }
+  71   1                      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    170    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

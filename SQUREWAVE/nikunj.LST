@@ -1,0 +1,61 @@
+A51 MACRO ASSEMBLER  NIKUNJ                                                               03/03/2014 17:55:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN nikunj.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE nikunj.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+0000                   3     ORG 00h ; reset vector
+0000 2100              4     JMP main ; jump above interrupt vectors
+000B                   5     ORG 000BH ; timer 0 interrupt vector
+000B B290              6     CPL P1.0 ; invert port 1 pin 0
+000D 32                7     RETI ; return from interrupt
+001B                   8     ORG 001BH ; timer 1 interrupt vector
+001B C28E              9     CLR TR1 ; stop timer 1
+001D 758DDC           10     MOV TH1, #0DCH
+0020 758B00           11     MOV TL1, #00H ; 
+0023 D28E             12     SETB TR1 ; start timer 1
+0025 B291             13     CPL P1.1; invent port 1 pin 1
+0027 32               14     RETI
+0100                  15     ORG 0100H ; main program entry point
+                      16     
+0100                  17     main:
+0100 758912           18     MOV TMOD, #12H ; timer 0 in 8-bit auto-reload timer mode, timer 1 in 16-bit mode
+0103 758CCF           19     MOV TH0,#-49; put (256 - 71) 185 decimal into TH0
+0106 D28C             20     SETB TR0 ; start timer 0
+0108 D28F             21     SETB TF1 ; force timer 1 interrupt
+010A D2A9             22     SETB ET0 ; enable timer 0 interrupt
+010C D2AB             23     SETB ET1 ; enable timer 1 interrupt
+010E D2AF             24     SETB EA ; global interrupt enable
+0110 80FE             25     JMP $ ; do nothing but wait for interrupt
+                      26     end
+A51 MACRO ASSEMBLER  NIKUNJ                                                               03/03/2014 17:55:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+EA . . . . . . . .  B ADDR   00A8H.7 A   
+ET0. . . . . . . .  B ADDR   00A8H.1 A   
+ET1. . . . . . . .  B ADDR   00A8H.3 A   
+MAIN . . . . . . .  C ADDR   0100H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

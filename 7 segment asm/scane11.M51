@@ -1,0 +1,134 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/05/2014  19:39:46  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE scane11.obj TO scane11 RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  scane11.obj (SCANE11)
+
+
+LINK MAP OF MODULE:  scane11 (SCANE11)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     00A6H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  scane11 (SCANE11)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SCANE11
+  C:0060H         SYMBOL        CONVERT
+  C:0054H         SYMBOL        DELAY
+  C:005AH         SYMBOL        FF
+  D:00A8H         SYMBOL        IE
+  C:0036H         SYMBOL        MAIN
+  C:0067H         SYMBOL        NEXT
+  C:006EH         SYMBOL        NEXT1
+  C:0075H         SYMBOL        NEXT2
+  C:007CH         SYMBOL        NEXT3
+  C:0083H         SYMBOL        NEXT4
+  C:008AH         SYMBOL        NEXT5
+  C:0091H         SYMBOL        NEXT6
+  C:0098H         SYMBOL        NEXT7
+  C:009FH         SYMBOL        NEXT8
+  C:00A5H         SYMBOL        NEXT9
+  D:0080H         SYMBOL        P0
+  D:0090H         SYMBOL        P1
+  B:0088H.5       SYMBOL        TF0
+  D:008CH         SYMBOL        TH0
+  D:008AH         SYMBOL        TL0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:0000H         LINE#         2
+  C:000BH         LINE#         7
+  C:000CH         LINE#         8
+  C:000EH         LINE#         9
+  C:0010H         LINE#         10
+  C:0012H         LINE#         11
+  C:0014H         LINE#         13
+  C:0015H         LINE#         14
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/05/2014  19:39:46  PAGE 2
+
+
+  C:0017H         LINE#         15
+  C:0019H         LINE#         16
+  C:001BH         LINE#         17
+  C:001DH         LINE#         19
+  C:001EH         LINE#         20
+  C:0020H         LINE#         21
+  C:0022H         LINE#         22
+  C:0024H         LINE#         23
+  C:0026H         LINE#         25
+  C:0027H         LINE#         26
+  C:0029H         LINE#         27
+  C:002BH         LINE#         28
+  C:002DH         LINE#         29
+  C:002FH         LINE#         31
+  C:0032H         LINE#         32
+  C:0035H         LINE#         34
+  C:0036H         LINE#         38
+  C:0038H         LINE#         39
+  C:003AH         LINE#         40
+  C:003CH         LINE#         41
+  C:003EH         LINE#         43
+  C:0041H         LINE#         44
+  C:0044H         LINE#         45
+  C:0047H         LINE#         46
+  C:004AH         LINE#         47
+  C:004DH         LINE#         48
+  C:0050H         LINE#         49
+  C:0052H         LINE#         50
+  C:0054H         LINE#         52
+  C:0057H         LINE#         53
+  C:005AH         LINE#         54
+  C:005DH         LINE#         55
+  C:005FH         LINE#         56
+  C:0060H         LINE#         59
+  C:0063H         LINE#         60
+  C:0066H         LINE#         61
+  C:0067H         LINE#         62
+  C:006AH         LINE#         63
+  C:006DH         LINE#         64
+  C:006EH         LINE#         65
+  C:0071H         LINE#         66
+  C:0074H         LINE#         67
+  C:0075H         LINE#         68
+  C:0078H         LINE#         69
+  C:007BH         LINE#         70
+  C:007CH         LINE#         71
+  C:007FH         LINE#         72
+  C:0082H         LINE#         73
+  C:0083H         LINE#         74
+  C:0086H         LINE#         75
+  C:0089H         LINE#         76
+  C:008AH         LINE#         77
+  C:008DH         LINE#         78
+  C:0090H         LINE#         79
+  C:0091H         LINE#         80
+  C:0094H         LINE#         81
+  C:0097H         LINE#         82
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/05/2014  19:39:46  PAGE 3
+
+
+  C:0098H         LINE#         83
+  C:009BH         LINE#         84
+  C:009EH         LINE#         85
+  C:009FH         LINE#         86
+  C:00A2H         LINE#         87
+  C:00A5H         LINE#         88
+  -------         ENDMOD        SCANE11
+
+Program Size: data=8.0 xdata=0 code=166
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,230 @@
+A51 MACRO ASSEMBLER  SCANE                                                                03/08/2014 18:51:13 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02
+OBJECT MODULE PLACED IN scane.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE scane.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+                       3     
+0000                   4     ORG  0000H
+0000 020700            5     LJMP MAIN
+000B                   6     ORG 000BH
+                       7             
+000B 30B607            8     NN:     JNB P3.6,CCC
+000E 758040            9             MOV P0,#40H
+0011 7590FF           10             MOV P1,#0FFH
+0014 32               11             RETI
+                      12     
+0015 7A0A             13     CCC:MOV R2,#10
+0017 900400           14             MOV DPTR,#400H
+001A E4               15     UP:     CLR A
+001B 93               16             MOVC A,@A+DPTR
+001C F6               17             MOV @R0,A
+001D F7               18             MOV @R1,A
+001E A3               19             INC DPTR
+001F 08               20             INC R0
+0020 09               21             INC R1
+0021 DAF7             22             DJNZ R2,UP
+                      23             
+0023 AD10             24             MOV R5,10H
+0025 7920             25             MOV R1,#20H
+0027 7E0A             26             MOV R6,#10
+0029 7C0A             27     UP4:MOV R4,#10
+002B 7910             28             MOV R1,#10H
+002D 7B0A             29     UP3:MOV R3,#10
+002F 7810             30             MOV     R0,#10H
+                      31             
+0031 900400           32     UP2:MOV DPTR,#400H
+0034 7A0A             33             MOV R2,#10
+0036 E4               34     UP1:CLR A
+0037 93               35             MOVC A,@A+DPTR
+                      36     
+0038 7F05             37             MOV R7,#5
+003A                  38     PP:     
+003A 20B528           39             JB P3.5,DDD
+003D F580             40     EEE:MOV P0,A
+003F D290             41             SETB P1.0
+0041 F120             42             ACALL DELAY
+0043 C290             43             CLR P1.0
+0045 8680             44             MOV P0,@R0
+0047 D291             45             SETB P1.1
+0049 F120             46             ACALL DELAY
+004B C291             47             CLR P1.1
+004D 8780             48             MOV P0,@R1
+004F D292             49             SETB P1.2
+0051 F120             50             ACALL DELAY
+0053 C292             51             CLR P1.2
+0055 8D80             52             MOV P0,R5
+0057 D293             53             SETB P1.3
+0059 F120             54             ACALL DELAY
+005B C293             55             CLR P1.3
+005D 30B605           56             JNB P3.6,DDD
+0060 30B4A8           57             JNB P3.4,NN
+0063 80D8             58             SJMP EEE 
+A51 MACRO ASSEMBLER  SCANE                                                                03/08/2014 18:51:13 PAGE     2
+
+0065 F580             59     DDD:MOV P0,A
+0067 D290             60             SETB P1.0
+0069 F120             61             ACALL DELAY
+006B C290             62             CLR P1.0
+                      63             
+006D 8680             64             MOV P0,@R0
+006F D291             65             SETB P1.1
+0071 F120             66             ACALL DELAY
+0073 C291             67             CLR P1.1
+                      68             
+                      69             
+0075 8780             70             MOV P0,@R1
+0077 D292             71             SETB P1.2
+0079 F120             72             ACALL DELAY
+007B C292             73             CLR P1.2
+                      74             
+007D 8D80             75             MOV P0,R5
+007F D293             76             SETB P1.3
+0081 F120             77             ACALL DELAY
+0083 C293             78             CLR P1.3
+0085 30B483           79             JNB P3.4,NN
+0088 DFB0             80             DJNZ R7,PP
+                      81             
+008A A3               82             INC DPTR
+                      83     
+008B DAA9             84             DJNZ R2,UP1
+                      85     
+008D 08               86             INC R0
+008E 8680             87             MOV P0,@R0
+0090 D291             88             SETB P1.1
+0092 F120             89             ACALL DELAY
+0094 C291             90             CLR P1.1
+                      91             
+0096 DB99             92             DJNZ R3,UP2
+                      93     
+0098 09               94             INC R1
+0099 8780             95             MOV P0,@R1
+009B D292             96             SETB P1.2
+009D F120             97             ACALL DELAY
+009F C292             98             CLR P1.2
+                      99             
+00A1 DC8A            100             DJNZ R4,UP3
+                     101     
+00A3 BE0A04          102                     CJNE R6,#10,AGAIN
+00A6 AD11            103                     MOV R5,11H
+00A8 8038            104                     SJMP NNN
+00AA BE0904          105     AGAIN:  CJNE R6,#9,AGAIN2
+00AD AD12            106                     MOV R5,12H
+00AF 8031            107                     SJMP NNN
+00B1 BE0804          108     AGAIN2: CJNE R6,#8,AGAIN3
+00B4 AD13            109                     MOV R5,13H
+00B6 802A            110                     SJMP NNN
+00B8 BE0704          111     AGAIN3: CJNE R6,#7,AGAIN4
+00BB AD14            112                     MOV R5,14H
+00BD 8023            113                     SJMP NNN
+00BF BE0604          114     AGAIN4: CJNE R6,#6,AGAIN5
+00C2 AD15            115                     MOV R5,15H
+00C4 801C            116                     SJMP NNN
+00C6 BE0504          117     AGAIN5: CJNE R6,#5,AGAIN6
+00C9 AD16            118                     MOV R5,16H
+00CB 8015            119                     SJMP NNN 
+00CD BE0404          120     AGAIN6: CJNE R6,#4,AGAIN7
+00D0 AD17            121                     MOV R5,17H
+00D2 800E            122                     SJMP NNN
+00D4 BE0304          123     AGAIN7: CJNE R6,#3,AGAIN8
+00D7 AD18            124                     MOV R5,18H
+A51 MACRO ASSEMBLER  SCANE                                                                03/08/2014 18:51:13 PAGE     3
+
+00D9 8007            125                     SJMP NNN 
+00DB BE0204          126     AGAIN8: CJNE R6,#2,NNN
+00DE AD19            127                     MOV R5,19H
+00E0 8000            128                     SJMP NNN 
+00E2 8D80            129     NNN:    MOV P0,R5
+00E4 D293            130                     SETB P1.3
+00E6 F120            131                     ACALL DELAY
+00E8 C293            132                     CLR P1.3
+00EA 1E              133                     DEC R6
+00EB BE0101          134                     CJNE R6,#1,NEXT
+00EE 32              135     CC:             RETI
+00EF 020029          136     NEXT:   LJMP UP4
+                     137     
+0700                 138     ORG 0700H
+                     139     
+0700                 140     MAIN:   
+                     141     
+0700 7810            142                 MOV R0,#10H
+0702 7920            143                 MOV R1,#20H
+0704 7590FF          144             MOV P1,#0FFH
+0707 758000          145                     MOV P0,#00H
+070A 75B0FF          146                     MOV P3,#0FFH
+070D 759000          147                     MOV P1,#00H
+0710 758901          148                     MOV TMOD,#01H
+0713 75A882          149                     MOV IE,#82H
+0716 758A66          150                     MOV TL0,#066H
+0719 758CFC          151                     MOV TH0,#0FCH
+                     152     
+071C D28C            153                     SETB TR0
+071E 80FE            154                     SJMP $
+                     155     
+0720                 156     DELAY: 
+0720 758A70          157     AA:     MOV TL0,#070H
+0723 758CFC          158             MOV TH0,#0FCH
+0726 308DFD          159     HERE:JNB TF0,HERE
+0729 C28D            160             CLR TF0  
+                     161                                     
+072B 22              162             RET
+                     163     
+0400                 164     ORG 0400H
+0400 40792430        165     DB 40H,79H,24H,30H,19H,12H,02H,78H,00H,10H
+0404 19120278                
+0408 0010                    
+                     166     
+                     167     END
+A51 MACRO ASSEMBLER  SCANE                                                                03/08/2014 18:51:13 PAGE     4
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AA . . . . . . . .  C ADDR   0720H   A   
+AGAIN. . . . . . .  C ADDR   00AAH   A   
+AGAIN2 . . . . . .  C ADDR   00B1H   A   
+AGAIN3 . . . . . .  C ADDR   00B8H   A   
+AGAIN4 . . . . . .  C ADDR   00BFH   A   
+AGAIN5 . . . . . .  C ADDR   00C6H   A   
+AGAIN6 . . . . . .  C ADDR   00CDH   A   
+AGAIN7 . . . . . .  C ADDR   00D4H   A   
+AGAIN8 . . . . . .  C ADDR   00DBH   A   
+CC . . . . . . . .  C ADDR   00EEH   A   
+CCC. . . . . . . .  C ADDR   0015H   A   
+DDD. . . . . . . .  C ADDR   0065H   A   
+DELAY. . . . . . .  C ADDR   0720H   A   
+EEE. . . . . . . .  C ADDR   003DH   A   
+HERE . . . . . . .  C ADDR   0726H   A   
+IE . . . . . . . .  D ADDR   00A8H   A   
+MAIN . . . . . . .  C ADDR   0700H   A   
+NEXT . . . . . . .  C ADDR   00EFH   A   
+NN . . . . . . . .  C ADDR   000BH   A   
+NNN. . . . . . . .  C ADDR   00E2H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+PP . . . . . . . .  C ADDR   003AH   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+UP . . . . . . . .  C ADDR   001AH   A   
+UP1. . . . . . . .  C ADDR   0036H   A   
+UP2. . . . . . . .  C ADDR   0031H   A   
+UP3. . . . . . . .  C ADDR   002DH   A   
+UP4. . . . . . . .  C ADDR   0029H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

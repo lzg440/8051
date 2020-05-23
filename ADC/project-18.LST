@@ -1,0 +1,71 @@
+C51 COMPILER V9.05   PROJECT_18                                                            11/28/2012 11:09:51 PAGE 1   
+
+
+C51 COMPILER V9.05, COMPILATION OF MODULE PROJECT_18
+OBJECT MODULE PLACED IN project-18.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE project-18.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                            #include<reg51.h>
+   2                            #include"lcd4bit.h"
+   3                            sbit rd=P3^3;
+   4                    sbit wr=P3^4;
+   5                            sbit intr=P3^5;
+   6                            int adc_0804()
+   7                    {
+   8   1                 int a;
+   9   1                  rd=1;
+  10   1                  wr=0;
+  11   1                  lcd_delay(2);
+  12   1                  wr=1;
+  13   1                  while(intr==1);
+  14   1                  rd=0;
+  15   1                  lcd_delay(2);
+  16   1                  a=P1;
+  17   1                              intr=1;
+  18   1                              return(a);
+  19   1                }
+  20                     void main()
+  21                             {
+  22   1                         unsigned int f,b,c,d,e;
+  23   1                  lcdinit();
+  24   1                              while(1)
+  25   1                          {
+  26   2                              e=adc_0804();
+  27   2                              f=P1%10;
+  28   2                  b=P1/10;
+  29   2                  c=b%10;
+  30   2                              b=b/10;
+  31   2                              d=b;
+  32   2                  d=d+48;
+  33   2                              lcd_datac(d);
+  34   2                              lcd_delay(2);
+  35   2                  c=c+48;
+  36   2                              lcd_datac(c);
+  37   2                              lcd_delay(2);
+  38   2                  f=f+48;
+  39   2                              lcd_datac(f);
+  40   2                              lcd_delay(2);
+  41   2                              lcd_delay(10);
+  42   2                              lcd_delay(1000);
+  43   2                              lcd_command(0x01);
+  44   2                              }
+  45   1                         }
+*** WARNING C316 IN LINE 45 OF project-18.c: unterminated conditionals
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    466    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      18
+   IDATA SIZE       =   ----    ----
+C51 COMPILER V9.05   PROJECT_18                                                            11/28/2012 11:09:51 PAGE 2   
+
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
